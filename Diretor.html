@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diretor</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row" style="background-color: #87CEFF">
+			<div class="col">Sistema Certificado</div>
+			<div class="col">Responsavel</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-1" style="background-color: #C6E2FF">MENU
+				<div class="row">Certificado</div>
+			</div>
+			<div class="col">
+				<div class="row" style="background-color: #B2DFEE">
+					<div class="col">
+						<form>
+							<div class="form-group">
+								<label for="formGroupExampleInput">Pesquisa</label> <br>
+								<label for="formGroupExampleInput">Nome</label>
+								<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite o Nome">
+							</div>
+							<div class="form-group">
+								<label for="formGroupExampleInput2">CPF/Passaporte</label>
+								<input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite o CPF/Passaporte">
+							</div>
+						</form>
+					</div>
+					<div class="col">
+						<div class="form-group col-md-4">
+							<label for="inputState"></label> <br>
+							<label for="inputState">Estado</label>
+							<select id="inputState" class="form-control">
+								<option selected>Emitido...</option>
+								<option>...</option>
+							</select>
+							<button type="submit" class="btn btn-primary">Filtrar</button>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="background-color: #87CEEB">
+					<button type="submit" class="btn btn-outline-primary">Negar</button>
+					<button type="submit" class="btn btn-outline-primary">Permitir</button>
+					<button type="submit" class="btn btn-outline-primary">Emitir</button>
+					<table class="table">
+						<thead class="thead-dark">
+							<tr>
+								<th>Nome completo</th>
+								<th>CPF</th>
+								<th>Email</th>
+								<th>Matricula</th>
+								<th>Açoes</th>		
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Diego Fernandes Almeida</td>
+								<td>650.571.944-02</td>
+								<td>DiegoFernandesAlmeida@dayrep.com</td>
+								<td>20191514065000</td>
+								<td><i class="material-icons">delete</i><i class="material-icons">edit</i><i class="material-icons">send</i></td>
+							</tr>
+
+							<tr>
+								<td>Carla Carvalho Barbosa</td>
+								<td>492.940.769-97</td>
+								<td>CarlaCarvalhoBarbosa@jourrapide.com</td>
+								<td>20191514065145</td>
+								<td><i class="material-icons">delete</i><i class="material-icons">edit</i><i class="material-icons">send</i></td>
+							</tr>
+
+							<tr>
+								<td>Emily Gomes Almeida</td>
+								<td>493.330.975-20</td>
+								<td>EmilyGomesAlmeida@jourrapide.com</td>
+								<td>20191514065563</td>
+								<td><i class="material-icons">delete</i><i class="material-icons">edit</i><i class="material-icons">send</i></td>
+							</tr>
+
+							<tr>
+								<td>Eduarda Silva Souza</td>
+								<td>410.228.261-07</td>
+								<td>EduardaSilvaSouza@jourrapide.com</td>
+								<td>20191514065256</td>
+								<td><i class="material-icons">delete</i><i class="material-icons">edit</i><i class="material-icons">send</i></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" style="background-color: #4A708B">Rodape</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
