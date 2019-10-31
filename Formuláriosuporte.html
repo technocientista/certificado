@@ -1,0 +1,134 @@
+
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="author" content="Taurus Tecnologia">
+    <meta name="description" content="Solução completa para o gerenciamento de eventos e venda de ingressos e inscrições.">
+    <meta name="keywords" content="ingressos, bilhetes, gerenciamento de eventos, gerenciamento de inscrições, emissão de certificados, gerenciar evento, inscrição online">
+    <meta name="reply-to" content="suporte@bitt.com.br">
+    <meta name="csrf-token" content="sCh13fNqire5jrcho4L3FD4nLBLPj4SjNepxbUzB">
+
+    <link rel="shortcut icon" href="https://bitt.com.br/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://bitt.com.br/img/favicon.ico" type="image/x-icon">
+    <title>bitt | Entre em contato </title>
+
+   
+     <link href="https://bitt.com.br/css/open_sans.css" rel="stylesheet">
+    
+
+ 
+    <link href="https://bitt.com.br/css/bootstrap3.min.css" rel="stylesheet">
+
+    
+    <link href="https://bitt.com.br/css/all.min.css" rel="stylesheet">
+    <link href="https://bitt.com.br/css/carousel.css" rel="stylesheet">
+
+    
+    <link href="https://bitt.com.br/css/style2.css" rel="stylesheet">
+    <link href="https://bitt.com.br/css/switch.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+
+
+            <div class="navbar-wrapper" >
+    <div class="container">
+        <nav class="navbar navbar-fixed-top" style="border-radius: 4px; background-color: #FFF;" >
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar" style="background-color: gray;"></span>
+                        <span class="icon-bar" style="background-color: gray;"></span>
+                        <span class="icon-bar" style="background-color: gray;"></span>
+                    </button>
+                     <a href=file:///C:/Users/IFCE-ALUNO/Documents/GitHub/certificado/TelaInicial.html" class="navbar-brand" style="padding-top: 10px;"><img class="img" src="https://cdn.pixabay.com/photo/2014/11/24/18/50/mind-544404_960_720.png" width="30%;"> </a> </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right" style="font-weight: bold;">
+                                     
+                        <li class="nav-item"><a class="nav-link js-scroll" href="file:///C:/Users/IFCE-ALUNO/Documents/GitHub/certificado/Login.html">ENTRAR</a></li>
+                         <li class="nav-item"><a class="nav-link js-scroll" href="file:///C:/Users/IFCE-ALUNO/Documents/GitHub/certificado/Suporte.html">SUPORTE</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>            <div style="margin-top: 100px;">
+    <div class="container" style="margin-top: 100px;">
+    <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Entre em contato</div>
+                <div class="panel-body">
+                    <form class="" method="POST" action="https://bitt.com.br/contato/create" >
+                        <input type="hidden" name="_token" value="sCh13fNqire5jrcho4L3FD4nLBLPj4SjNepxbUzB">
+                        <div class="form-group col-md-12 has-error">
+                            <label for="assunto">Assunto <span class="text-danger"></span></label>
+                            <select class="form-control" name="assunto" disabled="true">
+                                <option value="0">--- Escolha --- </option>
+                                                                <option value="4" selected=true>Alteração nos meus dados junto à plataforma</option>
+                                                                <option value="12" >Cancelar inscrição já paga</option>
+                                                                <option value="5" >Dificuldades em realizar um cadastro</option>
+                                                                <option value="6" >Dificuldades na inscrição de um Evento</option>
+                                                                <option value="3" >Dificuldades no Login</option>
+                                                                <option value="13" >Dúvidas em relação à um evento, como local, vagas, horário e etc.</option>
+                                                                <option value="2" >Meu e-ticket / chave não é válida, ou já está vencida</option>
+                                                                <option value="1" >Não recebi meu certificado ou meu certificado está com erros</option>
+                                                                <option value="30" >Outro assunto</option>
+                                                                                            </select>
+                                                        <span class="help-block">
+                                <strong>Favor escolher o assunto deste contato.</strong>
+                            </span>
+                                                    </div>
+                        <div class="form-group col-md-12">
+                            <label for="name" >Seu nome <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="name" value="" required >
+                                                    </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="email">Seu e-mail <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" name="email" value="" required>
+                                                    </div>
+                        <div class="form-group col-md-6">
+                            <label for="telefone">Seu telefone (c/ DDD)</label>
+                            <input type="text" class="form-control" name="telefone" value="" maxlength="11" placeholder="opcional">
+                                                    </div>
+                                                <div class="form-group col-md-12">
+                            <label for="msg">Mensagem <span class="text-danger">*</span><small>(descreva a dúvida ou dificuldade, informe a msg. de erro quando houver)</small></label>
+                            <textarea class="form-control" name="msg" maxlength="191" required></textarea>
+                                                    </div>
+                        <div class="form-group col-md-12 text-right">
+                            <a href="https://bitt.com.br/contato/formulario?_token=sCh13fNqire5jrcho4L3FD4nLBLPj4SjNepxbUzB&amp;assunto=0" class="btn btn-default">Voltar</a>&nbsp;&nbsp;<button class="btn btn-success" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    
+    <div style="margin-top: 100px;">
+        <style>
+    .link-footer:hover {
+        color: #f4511e;
+    }
+</style>
+
+
+
+           
+       
+
+     
+    </body>
+
+</html>
