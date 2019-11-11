@@ -1,0 +1,50 @@
+.bd-example {
+	position: relative;
+	padding: 1rem;
+	margin: 1rem -15px 0;
+	border: solid #f8f9fa;
+	border-width: .2rem 0 0;
+}
+
+header h3{
+	text-align: right;
+}
+
+.tr-min {
+	display:none;
+}
+@media screen and (max-width: 768px) {
+	.tr-max {
+		display:none;
+	}
+	.tr-min {
+		display:table;
+	}
+}
+
+footer {
+	background-color: #333;
+	color: #FFF;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+
+
+a.nav-link:link 
+{ 
+text-decoration:none; 
+} 
+
+.container-fluid h3{
+	text-align: center;
+}
+
+.logo{
+	text-align: center;
+}
+
+#btn{
+	bottom: 0;
+    position: absolute;
+}
