@@ -22,15 +22,6 @@ header h3{
 	}
 }
 
-footer {
-	background-color: #333;
-	color: #FFF;
-	padding: 20px;
-	margin-top: 20px;
-}
-
-
-
 a.nav-link:link 
 { 
 text-decoration:none; 
@@ -48,3 +39,38 @@ text-decoration:none;
 	bottom: 0;
     position: absolute;
 }
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+
+
+
+
+div.wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 0px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: $azul-ufms;
+
+    .content {
+        box-sizing: border-box;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding-left: $larguraSidebar;
+        z-index: 0;
+        background-color: #fff;
+        overflow: hidden;
+        overflow-y: auto;
+        background-color: $azul_ufms;
+
+        &.full {
+            padding-left: 0;
+        }
+    }
+
+ 
