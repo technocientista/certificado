@@ -29,6 +29,10 @@ a.nav-link:link
 	text-align: center;
 }
 
+.container {
+    margin-bottom: 70px;
+}
+
 .logo{
 	text-align: center;
 }
@@ -136,13 +140,13 @@ a.nav-link:link
         padding-left: 30px;
         padding-right: 30px;
         background-color: #ffffff;
-        margin-bottom: 70px;
+        
     }
     .container .jumbotron, .container-fluid .jumbotron {
         border-radius: 6px;
         padding-left: 15px;
         padding-right: 15px;
-        margin-bottom: 70px;
+        
     }
 }    
 .box {
@@ -160,12 +164,12 @@ a.nav-link:link
     .jumbotron {
         padding-top: 24px;
         padding-bottom: 24px;
-        margin-bottom: 70px;
+        
     }
 } 
 .jumbotron {
     padding: 2rem 1rem;
-    margin-bottom: 70px;
+    
     background-color: #ffffff;
     border-radius: .3rem;
 }
