@@ -45,78 +45,92 @@
 							</div>
 							<div class="box-body">
 								<form>
-									<div class="form-group">
-										<label for="inputAddress">Address</label>
-										<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-									</div>
-									
 									<div class="form-row">
-										<div class=" form-group col-md-6">
-											<label for="inputEmail4">Telefone</label>
-											<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+										<div class="col-md-4 mb-3">
+											<label for="validationServer01">Nome completo</label>
+											<input type="text" class="form-control is-valid" id="validationServer01" placeholder="Digite seu nome" value="" required>
+											<div class="valid-feedback">
+												
+											</div>
 										</div>
-										<div class=" form-group col-md-6">
-											<label for="inputPassword4">CPF</label>
-											<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+										<div class="col-md-4 mb-3">
+											<label for="validationServer02">CPF</label>
+											<input type="text" class="form-control is-valid" id="validationServer02" placeholder="Digite seu CPF" value="" required>
+											<div class="valid-feedback">
+												
+											</div>
 										</div>
-									</div>
-									<div class="form-row">
-										<div class="form-group col-md-6">
-											<label for="inputEmail4">Email</label>
-											<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+										<div class="col-md-4 mb-3">
+											<label for="validationServer02">Função</label>
+											<input type="text" class="form-control is-valid" id="validationServer02" placeholder="Digite sua função" value="" required>
+											<div class="valid-feedback">
+												
+											</div>
 										</div>
-										<div class="form-group col-md-6">
-											<label for="inputPassword4">Password</label>
-											<input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="inputAddress">Address</label>
-										<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-									</div>
-									<div class="form-group">
-										<label for="inputAddress2">Address 2</label>
-										<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
 									</div>
 									<div class="form-row">
-										<div class="form-group col-md-6">
-											<label for="inputCity">City</label>
-											<input type="text" class="form-control" id="inputCity">
+										<div class="col-md-6 mb-3">
+											<label for="validationServerUsername">E-mail</label>
+											<div class="input-group">
+												<div class="input-group-prepend">
+													<span class="input-group-text" id="inputGroupPrepend3">@</span>
+												</div>
+												<input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+												<div class="invalid-feedback">
+													Por favor digite seu e-mail
+												</div>
+											</div>
 										</div>
-										<div class="form-group col-md-4">
-											<label for="inputState">State</label>
-											<select id="inputState" class="form-control">
-												<option selected>Choose...</option>
-												<option>...</option>
-											</select>
-										</div>
-										<div class="form-group col-md-2">
-											<label for="inputZip">Zip</label>
-											<input type="text" class="form-control" id="inputZip">
-										</div>
-									</div>
-									<div class="form-group">
-										<div class="form-check">
-											<input class="form-check-input" type="checkbox" id="gridCheck">
-											<label class="form-check-label" for="gridCheck">
-												Check me out
-											</label>
+										<div class="col-md-6 mb-3">
+											<label for="validationServer02">Telefone</label>
+											<input type="number" class="form-control is-valid" id="validationServer02" placeholder="Digite seu telefone" value="" required>
+											<div class="valid-feedback">
+												
+											</div>
 										</div>
 									</div>
-									<button type="submit" class="btn btn-success">Registrar</button>
-								</form>
-							</div>
+									<div class="form-row">
+										<div class="col-md-6 mb-3">
+											<label for="validationServer03">Login</label>
+											<input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Login" required>
+											<div class="invalid-feedback">
+												Por favor escolha um login.
+											</div>
+										</div>
+										<div class="col-md-6 mb-3">
+											<label for="validationServer03">Senha</label>
+											<input type="password" class="form-control is-invalid" id="validationServer03" placeholder="Senha" required>
+											<div class="invalid-feedback">
+												Por favor escolha uma senha
+											</div>
+										</div>
+
+										
+									</div>
+
+								</div>
+								<div class="form-group">
+									<div class="form-check">
+										
+										<div class="invalid-feedback">
+											You must agree before submitting.
+										</div>
+									</div>
+								</div>
+								<a class="btn btn-success" href="index.php" >Registrar</a>
+							</form>
 						</div>
 					</div>
-
 				</div>
+
 			</div>
 		</div>
 	</div>
-	<?php include 'footer.php'; ?>
-	
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</div>
+<?php include 'footer.php'; ?>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -15,31 +15,38 @@
 </head>
 <body>
 	<header class="header">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-success ">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-success navbar-default">
 			<a class="navbar-brand" href="#">Sistema de certificados</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse " id="navbarSupportedContent">
+			<div class="collapse navbar-collapse row" id="navbarSupportedContent">
 				<div class="navbar-nav mr-auto">
 					
 					
 				</div>
 				
-				<form method="post" accept-charset="utf-8" class="form-inline " role="form" action="https://certificados.ufms.br/">
+				<form method="post" accept-charset="utf-8" class="form-inline text-right" role="form" action="https://certificados.ufms.br/">
 					<div style="display:none;">
-						<input type="hidden" name="_method" class="form-control mr-sm-2" value="POST">
+						<input type="hidden" name="_method" class="form-control mr-sm-2 col" value="POST">
 					</div>
-					<div class="form-group text required">
-						<input type="text" name="passaporte" class="form-control mr-sm-2" placeholder="CPF ou matrícula" autofocus="autofocus" required="required" id="passaporte">
+					<div class="form-group text required  mb-2">
+						<input type="text" name="passaporte" class="form-control " placeholder="CPF ou matrícula" autofocus="autofocus" required="required" id="passaporte">
 					</div>&nbsp;
-					<div class="form-group password required">
-						<input type="password" name="senha" class="form-control mr-sm-2" placeholder="Senha" required="required" id="senha" value="">
+					<div class="form-group password required mb-2">
+						<input type="password" name="senha" class="form-control  " placeholder="Senha" required="required" id="senha" value="">
 					</div>&nbsp;
-					<div >
-						<button class="btn btn-light" type="submit">Entrar</button>
-						<a class="btn btn-light" href="registro.php" data-target="registro.php">Registrar-se</a>	
+					<br>
+					<div class="text mb-2">
+						<button class="btn btn-outline-light " type="submit">Entrar</button>
 					</div>
+					<div class="text mb-2">
+						<a class="btn btn-outline-light" href="registro.php" data-target="registro.php">Registrar-se</a>	
+					</div>
+					
+
+
+					
 
 				</form>	
 				
@@ -59,7 +66,7 @@
 			<div class="row margin-top">
 
 				<div class="col-lg-12">
-					<div class="jumbotron text-center box box-success">
+					<div class=" text-center box box-success">
 						<h5><img src="img/logo_index.png" alt="NTI" height="128px"></h5>
 						<h4>O que é o Sistema de Certificados?</h4>
 						<p class="small">
