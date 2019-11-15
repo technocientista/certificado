@@ -10,7 +10,7 @@
 
 	<div class="wrapper">
 		<div class="main-view"> 
-			<div class="container">
+			<div class="container bottom70">
 				<div class=" row margin-top">
 					<div class="col-lg-12">
 						<div class="jumbotron box box-success">
@@ -95,7 +95,7 @@
 											</div>
 										</div>
 									</div>
-									<a class="btn btn-success" href="index.php" >Registrar</a>
+									<a class="btn btn-success" href="participante.php" >Registrar</a>
 								</form>
 							</div>
 							<!-- Body alterável: -->

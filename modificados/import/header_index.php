@@ -1,15 +1,13 @@
 <header class="header">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-success navbar-default">
-			<a class="navbar-brand" href="index.php">CERTIFICA</a>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-success navbar-default">
+		<div class="container">
+			<a class="navbar-brand" href="index.php">Sistema de Certificados - CERTIFICA</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse row" id="navbarSupportedContent">
 				<div class="navbar-nav mr-auto">
-					
-					
 				</div>
-				
 				<form method="post" accept-charset="utf-8" class="form-inline text-right" role="form" action="https://certificados.ufms.br/">
 					<div style="display:none;">
 						<input type="hidden" name="_method" class="form-control mr-sm-2 col" value="POST">
@@ -23,19 +21,11 @@
 					<br>
 					<div class="btn-group text mb-2">
 						<button class="btn btn-outline-light " type="submit">Entrar</button>
-					
+
 						<a class="btn btn-outline-light" href="registro.php" data-target="registro.php">Registrar-se</a>	
 					</div>
-					
-
-
-					
-
 				</form>	
-				
-
-
-				
 			</div>
-		</nav>
-	</header>
+		</div>
+	</nav>
+</header>

@@ -29,9 +29,6 @@ a.nav-link:link
 	text-align: center;
 }
 
-.container {
-    margin-bottom: 70px;
-}
 
 .logo{
 	text-align: center;
@@ -179,4 +176,8 @@ a.nav-link:link
 
 .bg-light {
     background-color: #1887b4;
+}
+
+.container.bottom70{
+    margin-bottom: 70px;
 }

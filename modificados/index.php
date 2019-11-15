@@ -12,7 +12,7 @@
 
 
 	<div class="main-view"> <!-- uiView: -->
-		<div class="container">
+		<div class="container bottom70">
 			<div class="row margin-top">
 
 				<div class="col-lg-12">
@@ -25,7 +25,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-3">
+				<div class="col-lg-3 col-sm-6">
 					<div class="box box-success">
 						<div class="box-header">
 							<h5 class="box-title">Emissão do Certificado</h5>
@@ -36,7 +36,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-3">
+				<div class="col-lg-3 col-sm-6">
 					<div class="box box-info">
 						<div class="box-header">
 							<h5 class="box-title">Validação do Certificado</h5>
@@ -47,7 +47,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-3">
+				<div class="col-lg-3 col-sm-6">
 					<div class="box box-warning">
 						<div class="box-header">
 							<h5 class="box-title">Suporte</h5>
@@ -58,14 +58,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-3">
+				<div class="col-lg-3 col-sm-6">
 					<div class="box box-danger">
 						<div class="box-header">
 							<h5 class="box-title">Participar de evento</h5>
 						</div>
 						<div class="box-body">
-							<p>Clique no botão abaixo e cadastre-se em uma atividade.</p>
-							<p class="text-right"><a href="participar.php" class="btn btn-danger" alt="Ajuda" title="Ajuda">Participar</a></p>
+							<p>Clique no botão abaixo e cadastre-se como participante.</p>
+							<p class="text-right"><a href="novas_atividades.php" class="btn btn-danger" alt="Ajuda" title="Ajuda">Participar</a></p>
 						</div>
 					</div>
 				</div>

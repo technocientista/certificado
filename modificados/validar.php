@@ -10,7 +10,7 @@
 
 	<div class="wrapper">
 		<div class="main-view"> 
-			<div class="container">
+			<div class="container bottom70">
 				<div class=" row margin-top">
 					<div class="col-lg-12">
 						<div class="jumbotron box box-success">
