@@ -5,7 +5,7 @@
 
 </head>
 <body>
-	<?php include 'import/header_participante.php'; ?>
+	<?php include 'import/header_responsavel.php'; ?>
 
 
 	<div class="wrapper">
@@ -15,19 +15,32 @@
 					<div class="col-lg-12">
 						<div class="jumbotron box box-success">
 							<!-- Body alterável: -->
-							<div >
-								<h4>Área do participante</h4>
-								<h5>Bem vindo Participante</h5>
-								<p>Veja aqui a sua lista de atividades e suas situações.</p>
-								<form class="form-inline">
-									<input class="form-control mr-sm-2" type="search" placeholder="Filtrar" aria-label="Search">
-									<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Filtrar</button>
-								</form>
-							</div>
+
+
+							<h5>Atividades</h5>
+							<p>Veja aqui a sua lista de atividades e suas situações.</p>
+							<form class="form-inline row">
+
+								<div class="col-lg-6 col-6">
+									<input class="form-control mr-sm-2" type="search" placeholder="Digite sua busca" aria-label="Search">
+
+									<button class="btn  btn-outline-success my-2 my-sm-0" type="submit">Filtrar</button>
+								</div>
+								<div class="col-lg-6 col-6 text-right">
+									<a class="btn btn-outline-success my-2 my-sm-0" href="registrar_atividade.php">Nova atividade</a>
+								</div>	
+								
+							</form>
+
+
+
+							
+							
+							
 							<div class="table-responsive-lg">
 								<table id="tableAcao" class="table table-striped table-hover table-bordered table-condensed">
 									<thead>
-										<tr>
+										<tr class="text-center">
 											<th class="tr-max"><a>#</a></th>
 											<th ><a>Atividade</a></th>
 											<th class="tr-max"><a>Carga horária</a></th>
@@ -37,10 +50,10 @@
 									</thead>
 									<tbody>
 										<tr>
-											<th class="tr-max">1</th>
+											<th class="tr-max text-center">1</th>
 											<td >Workshop de Computação</td>
 											<td class="tr-max text-center">40h</td>
-											<td class="text-center"><label class="badge badge-primary text-wrap">Cursando</label></td>
+											<td class="text-center"><label class="badge badge-primary text-wrap">Ocorrendo</label></td>
 											
 
 											<td class="actions text-light text-center">
@@ -64,10 +77,10 @@
 											</td>
 										</tr>
 										<tr>
-											<th class="tr-max">2</th>
+											<th class="tr-max text-center">2</th>
 											<td >Curso de Mestrado</td>
 											<td class="tr-max text-center">40h</td>
-											<td class="text-center"><label class="badge badge-success text-wrap">Conluído</label></td>
+											<td class="text-center"><label class="badge badge-success text-wrap">Concluído</label></td>
 											
 
 											<td class="actions text-light text-center">

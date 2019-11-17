@@ -13,11 +13,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link" href="participante.php">Minhas atividades</a>
+                        <a class="nav-link" href="responsavel.php">Situação de participantes</a>
 
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="novas_atividades.php">Novas atividades</a>
+                        <a class="nav-link" href="atividades.php">Atividades</a>
 
                     </li>
                 </ul>
