@@ -16,7 +16,7 @@
 						<div class="jumbotron box box-success">
 							<!-- Body alterável: -->
 							<div class="box-header">
-								<h3 class="box-title">Participar de atividade</h3>
+								<h3 class="box-title">Registrar atividade</h3>
 							</div>
 							<div class="box-body">
 								<form>
