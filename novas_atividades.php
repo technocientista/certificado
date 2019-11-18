@@ -37,7 +37,7 @@
 						<div class="box-body">
 							<img class="box box-success" src="img/01.jpg">
 							<p>Participe da nossa atividade, você nãi irá se arrepender.</p>
-							<p class="text-right"><a href="participar.php" class="btn btn-success" alt="Emitir Certificado" title="Emitir Certificado">Participar</a></p>
+							<p class="text-right"><a href="participante.php" class="btn btn-success" alt="Emitir Certificado" title="Emitir Certificado">Participar</a></p>
 						</div>
 					</div>
 				</div>
@@ -49,7 +49,7 @@
 						<div class="box-body ">
 							<img class="box box-info" src="img/02.jpg">
 							<p>Participe da nossa atividade, você nãi irá se arrepender.</p>
-							<p class="text-right"><a href="participar.php" class="btn btn-info" alt="Validar Certificado" title="Validar Certificado">Participar</a></p>
+							<p class="text-right"><a href="participante.php" class="btn btn-info" alt="Validar Certificado" title="Validar Certificado">Participar</a></p>
 						</div>
 					</div>
 				</div>
@@ -61,7 +61,7 @@
 						<div class="box-body">
 							<img class="box box-warning" src="img/03.jpg">
 							<p>Participe da nossa atividade, você nãi irá se arrepender.</p>
-							<p class="text-right"><a  class="btn btn-warning" href="participar.php">Participar</a></p>
+							<p class="text-right"><a  class="btn btn-warning" href="participante.php">Participar</a></p>
 						</div>
 					</div>
 				</div>
@@ -73,7 +73,7 @@
 						<div class="box-body">
 							<img class="box box-danger" src="img/04.png">
 							<p>Participe da nossa atividade, você nãi irá se arrepender.</p>
-							<p class="text-right"><a href="participar.php" class="btn btn-danger" alt="Ajuda" title="Ajuda">Participar</a></p>
+							<p class="text-right"><a href="participante.php" class="btn btn-danger" alt="Ajuda" title="Ajuda">Participar</a></p>
 						</div>
 					</div>
 				</div>

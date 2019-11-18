@@ -11,6 +11,7 @@
 				<form method="post" accept-charset="utf-8" class="form-inline text-right" role="form" action="https://certificados.ufms.br/">
 					<!--Temporário-->
 					<div class="form-group text required  mb-2">
+						<a class="btn btn-outline-light"  href="participante.php">Participante</a>
 						<a class="btn btn-outline-light"  href="responsavel.php">Responsável</a>
 						<a class="btn btn-outline-light" href="diretor.php">Diretor</a>
 					</div>

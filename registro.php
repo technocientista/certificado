@@ -36,8 +36,12 @@
 											</div>
 										</div>
 										<div class="col-md-4 mb-3">
-											<label for="validationServer02">Função</label>
-											<input type="text" class="form-control is-valid" id="validationServer02" placeholder="Digite sua função" value="" required>
+											<label for="validationServer02">Tipo de usuário</label>
+											<select class="form-control is-valid">
+												<option>Responsável</option>
+												<option>Participante</option>
+												
+											</select>
 											<div class="valid-feedback">
 												
 											</div>
