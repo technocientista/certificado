@@ -1,0 +1,26 @@
+/* nti.scss */
+
+@import "layout/variaveis.scss";
+$icon-font-path: "../fonts/";
+$fa-font-path: "../fonts/";
+
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/components-font-awesome/scss/font-awesome.scss";
+@import "../../bower_components/bootstrap-sass-datepicker/sass/datepicker";
+
+@import "layout/timepicker.scss";
+@import "layout/spinner.scss";
+@import "layout/typeahead.scss";
+@import "layout/mixins.scss";
+@import "layout/fonts.scss";
+@import "layout/navbar.scss";
+@import "layout/sidebar.scss";
+@import "layout/page_header.scss";
+@import "layout/page_footer.scss";
+@import "layout/box.scss";
+@import "layout/layout.scss";
+@import "layout/forms.scss";
+@import "layout/acessibilidade.scss";
+@import "layout/loading.scss";
+@import "layout/grid.scss";
+@import "tree/default/style";
