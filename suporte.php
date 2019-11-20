@@ -10,7 +10,7 @@
 
 	<div class="wrapper">
 		<div class="main-view"> 
-			<div class="container">
+			<div class="container bottom70">
 				<div class=" row margin-top">
 					<div class="col-lg-12">
 						<div class="jumbotron box box-success">
@@ -18,6 +18,7 @@
 							<div class="box-header">
 								<h3 class="box-title">Contato com o suporte</h3>
 							</div>
+
 							<form>
 								<div class="form-row">
 									<div class="col-md-4 mb-3">
@@ -64,6 +65,17 @@
 							
 							
 							<!-- Body alterável: -->
+						</div>
+					</div>
+					<div class="col-lg">
+						<div class="box box-danger ">
+							<div class="box-header">
+								<h5 class="box-title">Ajuda</h5>
+							</div>
+							<div class="box-body">
+								<p>Clique no botão abaixo se deseja acessar o menu de Ajuda do sistema.</p>
+								<p ><a href="ajuda.php" class="btn btn-danger" alt="Ajuda" title="Ajuda">Ajuda</a></p>
+							</div>
 						</div>
 					</div>
 				</div>

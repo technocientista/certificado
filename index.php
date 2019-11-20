@@ -50,11 +50,11 @@
 				<div class="col-lg-3 col-sm-6">
 					<div class="box box-warning">
 						<div class="box-header">
-							<h5 class="box-title">Suporte</h5>
+							<h5 class="box-title">Suporte/Ajuda</h5>
 						</div>
 						<div class="box-body">
-							<p>Clique no botão abaixo se deseja entrar em contato com o suporte.</p>
-							<p class="text-right"><a  class="btn btn-warning" href="suporte.php">Suporte</a></p>
+							<p>Clique no botão abaixo se deseja entrar em contato com o suporte ou acessar o menu de Ajuda do sistema.</p>
+							<p class="text-right"><a  class="btn btn-warning" href="suporte.php">Suporte/Ajuda</a></p>
 						</div>
 					</div>
 				</div>
@@ -69,6 +69,7 @@
 						</div>
 					</div>
 				</div>
+				
 
 			</div>
 		</div>
