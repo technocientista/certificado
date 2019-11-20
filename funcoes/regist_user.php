@@ -20,7 +20,7 @@ if ($conn->query($sql) === TRUE) {
 	$_SESSION['check'] 			= 1;
 	$_SESSION['msg']			= 'Novo usuário cadastrado!';
 	$_SESSION['alert_color']	= 1;
-	header("location: ../registro.php");
+	header("location: ../index.php");
 	exit();
 
 } else {
