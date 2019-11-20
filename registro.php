@@ -23,7 +23,7 @@ include ('funcoes/conn.php');
 					
 					<div class="col-lg-12">
 						<div class="jumbotron box box-success">
-							<?php include 'funcoes/alert.php'; ?>
+							
 							
 							<div class="box-header">
 								<h3 class="box-title">Registro</h3>

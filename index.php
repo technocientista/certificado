@@ -16,6 +16,7 @@
 			<div class="row margin-top">
 
 				<div class="col-lg-12">
+					<?php include 'funcoes/alert.php'; ?>
 					<div class=" text-center box box-success">
 						<h5><img src="img/logo_index.png" alt="NTI" height="128px"></h5>
 						<h4>CERTIFICA</h4>
