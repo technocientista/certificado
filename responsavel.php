@@ -28,27 +28,26 @@ include ('funcoes/conn.php');
 								<?php echo 'Bem vindo <strong>'.$_SESSION['usuario'].'</strong>'; ?>
 								
 								<p>Veja aqui a sua lista de participantes e suas situações.</p>
-								<form class="form-inline">
-									<input class="form-control mr-sm-2" type="search" placeholder="Cpf ou Matrícula" aria-label="Search">
-									<input class="form-control mr-sm-2" type="search" placeholder="Nome" aria-label="Search">
-									<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Filtrar</button>
-								</form>
+								
+								<div class="form-row align-items-center">
+									<div class="col-auto col-lg-3">
+										<label class="sr-only" for="inlineFormInputGroup">Username</label>
+										<div class="input-group mb-2 ">
+											<div class="input-group-prepend">
+												<div class="input-group-text bg-success text-light">
+													<i class="material-icons ">
+														search
+													</i>
+												</div>
+											</div>
+											<input type="text" class="form-control form-control-lg" id="inlineFormInputGroup" placeholder="Nome ou CPF">
+										</div>
+									</div>
+								</div>
+
 							</div>
 							<div class="table-responsive-lg">
-								<ul class="nav nav-tabs">
-									<li class="nav-item">
-										<a class="nav-link active" href="#">Aprovados</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Emitidos</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Correção</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cancelados</a>
-									</li>
-								</ul>
+								
 								<table id="tableAcao" class="table table-striped table-hover table-bordered table-condensed">
 									<thead>
 										<tr class="text-center">
