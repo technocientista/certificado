@@ -8,7 +8,7 @@
 			<div class="collapse navbar-collapse row" id="navbarSupportedContent">
 				<div class="navbar-nav mr-auto">
 				</div>
-				<form method="post" accept-charset="utf-8" class="form-inline text-right" role="form" action="https://certificados.ufms.br/">
+				<form method="post" accept-charset="utf-8" class="form-inline text-right" role="form" action="funcoes/logar.php">
 					<!--Temporário-->
 					<div class="form-group text required  mb-2">
 						<a class="btn btn-outline-light"  href="participante.php">Participante</a>
@@ -20,10 +20,10 @@
 						<input type="hidden" name="_method" class="form-control mr-sm-2 col" value="POST">
 					</div>
 					<div class="form-group text required  mb-2">
-						<input type="text" name="passaporte" class="form-control " placeholder="CPF ou matrícula" autofocus="autofocus" required="required" id="passaporte">
+						<input type="text" name="login" class="form-control " placeholder="CPF ou matrícula" autofocus="autofocus" required>
 					</div>&nbsp;
 					<div class="form-group password required mb-2">
-						<input type="password" name="senha" class="form-control  " placeholder="Senha" required="required" id="senha" value="">
+						<input type="password" name="senha" class="form-control  " placeholder="Senha" required>
 					</div>&nbsp;
 					<br>
 					<div class="btn-group text mb-2">

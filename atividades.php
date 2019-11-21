@@ -15,7 +15,7 @@
 					<div class="col-lg-12">
 						<div class="jumbotron box box-success">
 							<!-- Body alterável: -->
-
+							<?php include 'funcoes/alert.php'; ?>
 
 							<h5>Atividades</h5>
 							<p>Veja aqui a sua lista de atividades e suas situações.</p>
@@ -49,65 +49,70 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<th class="tr-max text-center">1</th>
-											<td >Workshop de Computação</td>
-											<td class="tr-max text-center">40h</td>
-											<td class="text-center"><label class="badge badge-primary text-wrap">Ocorrendo</label></td>
-											
+										<?php 
 
-											<td class="actions text-light text-center">
-												<div class="btn-group" role="group">
-													<a class="btn btn-primary btn-sm" title="Visualizar Curso">
-														<i class="material-icons sm-18">
-															search
-														</i>
-													</a>
-													<a class="btn btn-danger btn-sm">
-														<i class="material-icons sm-18">
-															delete
-														</i>
-													</a>
-													<a class="btn btn-success btn-sm">
-														<i class="material-icons sm-18">
-															print
-														</i>
-													</a>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th class="tr-max text-center">2</th>
-											<td >Curso de Mestrado</td>
-											<td class="tr-max text-center">40h</td>
-											<td class="text-center"><label class="badge badge-success text-wrap">Concluído</label></td>
-											
+										include "funcoes/conn.php";
 
-											<td class="actions text-light text-center">
-												<div class="btn-group" role="group">
-													<a class="btn btn-primary btn-sm" title="Visualizar Curso">
-														<i class="material-icons">
-															search
-														</i>
-													</a>
-													<a class="btn btn-danger btn-sm">
-														<i class="material-icons">
-															delete
-														</i>
-													</a>
-													<a class="btn btn-success btn-sm">
-														<i class="material-icons">
-															print
-														</i>
-													</a>
-												</div>
-											</td>
-										</tr>
+										
+
+										$sql = "SELECT * FROM atividade AS a JOIN situacao_ativ AS s ON a.fk_situacao_ativ_id_situacao_ativ = s.id_situacao_ativ ";
+
+										$resultado = $conn->query($sql);
+
+										if ($resultado->num_rows > 0) {
+											while($linha = $resultado->fetch_assoc()) {
+												
+												$id_atv 			= $linha["id_atv"];
+												$nome_atv 			= $linha["nome_atv"];
+												$data_inicial_atv 	= $linha["data_inicial_atv"];
+												$carga_horaria_atv 	= $linha["carga_horaria_atv"];
+												$data_final_atv 	= $linha["data_final_atv"];
+												$local 				= $linha["local"];
+												$status 			= $linha["status_atv"];
+												$situacao 			= $linha["situacao_ativ"];
+
+												if ( $status) {
+
+													?>
+													<tr>
+														<th class="tr-max text-center"><?php echo $id_atv; ?></th>
+														<td ><?php echo $nome_atv; ?></td>
+														<td class="tr-max text-center"><?php echo $carga_horaria_atv; ?></td>
+														<td class="text-center">
+															<label class="badge badge-primary text-wrap"><?php echo $situacao; ?></label>
+														</td>
+
+
+														<td class="actions text-light text-center">
+															<div class="btn-group" role="group">
+																<a class="btn btn-primary btn-sm" title="Alterar situação">
+																	<i class="material-icons sm-18">
+																		update
+																	</i>
+																</a>
+																<a class="btn btn-danger btn-sm" title="Excluir atividade">
+																	<i class="material-icons sm-18">
+																		delete
+																	</i>
+																</a>
+																<a class="btn btn-success btn-sm" title="Detalhes">
+																	<i class="material-icons sm-18">
+																		search
+																	</i>
+																</a>
+															</div>
+														</td>
+													</tr>
+													<?php 
+												}
+											}
+										}
+										?>
 									</tbody>
 								</table>
 							</div>
 
-							
+
 
 
 							<!-- Body alterável: -->

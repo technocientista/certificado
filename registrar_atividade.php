@@ -19,26 +19,26 @@
 								<h3 class="box-title">Registrar atividade</h3>
 							</div>
 							<div class="box-body">
-								<form>
+								<form method="post" action="funcoes/regist_ativ.php">
 									<div class="form-row">
 										<div class="col-md-4 mb-3">
 											<label for="validationServer01">Título da atividade</label>
-											<input type="text" class="form-control is-valid" id="validationServer01" placeholder="Título da atividade" value="" required>
-											<div class="valid-feedback">
+											<input type="text" class="form-control info is-invalid" id="validationServer01" placeholder="Título da atividade" value="" required name="nome_atv">
+											<div class="invalid-feedback">
 												Digite o título do evento
 											</div>
 										</div>
 										<div class="col-md-4 mb-3">
 											<label for="validationServer02">Carga horária</label>
-											<input type="text" class="form-control is-valid" id="validationServer02" placeholder="Digite a carga horária" value="" required>
-											<div class="valid-feedback">
+											<input type="text" class="form-control info is-invalid" id="validationServer02" placeholder="Digite a carga horária" value="" name="carga_horaria_atv" required>
+											<div class="invalid-feedback">
 												Digite a carga horária
 											</div>
 										</div>
 										<div class="col-md-4 mb-3">
 											<label for="validationServer02">Local da atividade</label>
-											<input type="text" class="form-control is-valid" id="validationServer02" placeholder="Digite o local da atividade" value="" required>
-											<div class="valid-feedback">
+											<input type="text" class="form-control info is-invalid" id="validationServer02" placeholder="Digite o local da atividade" value="" required name="local">
+											<div class="invalid-feedback">
 												Digite o local da atividade
 											</div>
 										</div>
@@ -47,8 +47,7 @@
 										<div class="col-md-6 mb-3">
 											<label for="validationServerUsername">Data Inicial</label>
 											
-
-											<input type="date" class="form-control is-invalid" id="validationServerUsername" placeholder="E-mail" aria-describedby="inputGroupPrepend3" required>
+											<input type="date" class="form-control info is-invalid" id="validationServerUsername" placeholder="E-mail" aria-describedby="inputGroupPrepend3" required name="data_inicial_atv">
 											<div class="invalid-feedback">
 												Digite uma data para o início da atividade.
 											</div>
@@ -56,8 +55,8 @@
 										</div>
 										<div class="col-md-6 mb-3">
 											<label for="validationServer02">Data Final</label>
-											<input type="date" class="form-control is-valid" id="validationServer02" placeholder="Digite seu telefone" value="" required>
-											<div class="valid-feedback">
+											<input type="date" class="form-control info is-invalid" id="validationServer02" placeholder="Digite seu telefone" value="" required name="data_final_atv">
+											<div class="invalid-feedback">
 												Digite uma data para o término da atividade.
 											</div>
 										</div>
@@ -65,15 +64,8 @@
 									
 
 
-									<div class="form-group">
-										<div class="form-check">
-
-											<div class="invalid-feedback">
-												You must agree before submitting.
-											</div>
-										</div>
-									</div>
-									<a class="btn btn-success" href="atividades.php" >Registrar</a>
+									<button class="btn btn-success" type="submit">Registrar</button>
+									<a class="btn btn-success" href="atividades.php" >**Registrar</a>
 								</form>
 							</div>
 							<!-- Body alterável: -->
@@ -85,5 +77,6 @@
 
 		<?php include 'import/footer.php'; ?>
 		<?php include 'import/import_script.php'; ?>
+		<script src="js/valida_campos.js"></script>
 	</body>
 	</html>

@@ -33,27 +33,28 @@ include ('funcoes/conn.php');
 									<div class="form-row">
 										<div class="col-md-4 mb-3">
 											<label for="validationServer01">Nome completo</label>
-											<input type="text" class="form-control is-valid" id="validationServer01" placeholder="Digite seu nome" name="nome_usuario" required>
-											<div class="valid-feedback">
-												
+											<input type="text" class="form-control info is-invalid" id="validationServer01" placeholder="Digite seu nome" name="nome_usuario" required>
+											<div class="invalid-feedback">
+												Digite seu nome
 											</div>
 										</div>
 										<div class="col-md-4 mb-3">
 											<label for="validationServer02">CPF</label>
-											<input type="number" class="form-control is-valid" id="validationServer02" placeholder="Digite seu CPF" name="cpf_usuario" required>
-											<div class="valid-feedback">
-												
+											<input type="number" class="form-control info is-invalid" id="validationServer02" placeholder="Digite seu CPF" name="cpf_usuario" required>
+											<div class="invalid-feedback">
+												Digite seu CPF
 											</div>
 										</div>
 										<div class="col-md-4 mb-3">
 											<label for="validationServer02">Tipo de usuário</label>
-											<select class="form-control is-valid" name="fk_papel">
+											<select class="form-control info is-invalid" name="fk_papel">
+												<option value=""></option>
 												<option value="1">Responsável</option>
 												<option value="2">Participante</option>
 												
 											</select>
-											<div class="valid-feedback">
-												
+											<div class="invalid-feedback">
+												Digite seu tipo de usuário
 											</div>
 										</div>
 									</div>
@@ -62,16 +63,17 @@ include ('funcoes/conn.php');
 											<label for="validationServerUsername">E-mail</label>
 											
 											
-											<input type="email" class="form-control is-invalid" id="validationServerUsername" placeholder="E-mail" aria-describedby="inputGroupPrepend3" required name="email_usuario">
+											<input type="email" class="form-control info is-invalid" id="validationServerUsername" placeholder="E-mail" aria-describedby="inputGroupPrepend3" required name="email_usuario">
 											<div class="invalid-feedback">
-												Por favor digite seu e-mail
+												Digite seu e-mail
 											</div>
 											
 										</div>
 										<div class="col-md-6 mb-3">
 											<label for="validationServer02">Telefone</label>
-											<input type="number" class="form-control is-valid" id="validationServer02" placeholder="Digite seu telefone" value="" required name="tel_usuario">
-											<div class="valid-feedback">
+											<input type="number" class="form-control info is-invalid" id="validationServer02" placeholder="Digite seu telefone" value="" required name="tel_usuario">
+											<div class="invalid-feedback">
+												Digite seu e-mail telefone
 												
 											</div>
 										</div>
@@ -79,16 +81,16 @@ include ('funcoes/conn.php');
 									<div class="form-row">
 										<div class="col-md-6 mb-3">
 											<label for="validationServer03">Login</label>
-											<input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Login" required name="login">
+											<input type="text" class="form-control info is-invalid" id="validationServer03" placeholder="Login" required name="login">
 											<div class="invalid-feedback">
-												Por favor escolha um login.
+												Escolha um login.
 											</div>
 										</div>
 										<div class="col-md-6 mb-3">
 											<label for="validationServer03">Senha</label>
-											<input type="password" class="form-control is-invalid" id="validationServer03" placeholder="Senha" required name="senha">
+											<input type="password" class="form-control info is-invalid" id="validationServer03" placeholder="Senha" required name="senha">
 											<div class="invalid-feedback">
-												Por favor escolha uma senha
+												Escolha uma senha
 											</div>
 										</div>
 
@@ -96,14 +98,7 @@ include ('funcoes/conn.php');
 									</div>
 
 
-									<div class="form-group">
-										<div class="form-check">
-
-											<div class="invalid-feedback">
-												You must agree before submitting.
-											</div>
-										</div>
-									</div>
+									
 									<button class="btn btn-success" type="submit">Registrar</button>
 									<a class="btn btn-success" href="index.php" >*Registrar</a>
 								</form>
@@ -117,6 +112,6 @@ include ('funcoes/conn.php');
 	</div>
 	<?php include 'import/footer.php'; ?>
 	<?php include 'import/import_script.php'; ?>
-	
+	<script src="js/valida_campos.js"></script>
 </body>
 </html>

@@ -1,3 +1,11 @@
+<?php
+session_start();
+header('Content-Type: text/html; charset=utf-8');
+include ('funcoes/conn.php');
+//include ('funcoes/verifica_login.php');
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +25,7 @@
 							<!-- Body alterável: -->
 							<div >
 								<h4>Área do participante</h4>
-								<h5>Bem vindo Participante</h5>
+								<?php echo 'Bem vindo '.$_SESSION['usuario']; ?>
 								<p>Veja aqui a sua lista de atividades e suas situações.</p>
 								<form class="form-inline">
 									<input class="form-control mr-sm-2" type="search" placeholder="Filtrar" aria-label="Search">

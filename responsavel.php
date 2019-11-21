@@ -1,3 +1,11 @@
+<?php
+session_start();
+header('Content-Type: text/html; charset=utf-8');
+include ('funcoes/conn.php');
+//include ('funcoes/verifica_login.php');
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +25,8 @@
 							<!-- Body alterável: -->
 							<div >
 								<h4>Área do Responsável</h4>
-								<h5>Bem vindo Responsável</h5>
+								<?php echo 'Bem vindo <strong>'.$_SESSION['usuario'].'</strong>'; ?>
+								
 								<p>Veja aqui a sua lista de participantes e suas situações.</p>
 								<form class="form-inline">
 									<input class="form-control mr-sm-2" type="search" placeholder="Cpf ou Matrícula" aria-label="Search">
@@ -42,74 +51,82 @@
 								</ul>
 								<table id="tableAcao" class="table table-striped table-hover table-bordered table-condensed">
 									<thead>
-										<tr>
-											<th ><a>Nome</a></th>
+										<tr class="text-center">
+											<th ><a>#</a></th>
+											<th class="tr-max"><a>Nome</a></th>
 											<th class="tr-max"><a>E-mail</a></th>
-											<th class="tr-max"><a>Matrícula</a></th>
 											<th class="tr-max"><a>Situação</a></th>
 											<th class="actions actions-90">Ações</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<th >Antonio José de Assis</th>
-											<td class="tr-max">antoniojose@gmail.com</td>
-											<td class="tr-max text-center">20191312000234</td>
-											<td class="tr-max text-center"><label class="badge badge-primary text-wrap">Aguardando</label></td>
-											
+										<?php 
 
-											<td class="actions text-light text-center">
-												<div class="btn-group" role="group">
-													<a class="btn btn-primary btn-sm" title="Imprimir">
-														<i class="material-icons sm-18">
-															print
-														</i>
-													</a>
-													<a class="btn btn-danger btn-sm" title="Cancelar aprovação">
-														<i class="material-icons sm-18">
-															cancel
-														</i>
-													</a>
-													<a class="btn btn-success btn-sm" title="Assinar aprovação">
-														<i class="material-icons sm-18">
-															check
-														</i>
-													</a>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th >Maria Malta Ribeiro</th>
-											<td class="tr-max">mariaribeiro@gmail.com</td>
-											<td class="tr-max text-center">20191312000234</td>
-											<td class="tr-max text-center"><label class="badge badge-success text-wrap">Assinado</label></td>
-											
+										include "funcoes/conn.php";
 
-											<td class="actions text-light text-center">
-												<div class="btn-group" role="group">
-													<a class="btn btn-primary btn-sm" title="Imprimir">
-														<i class="material-icons sm-18">
-															print
-														</i>
-													</a>
-													<a class="btn btn-danger btn-sm" title="Cancelar aprovação">
-														<i class="material-icons sm-18">
-															cancel
-														</i>
-													</a>
-													<a class="btn btn-success btn-sm" title="Assinar aprovação">
-														<i class="material-icons sm-18">
-															check
-														</i>
-													</a>
-												</div>
-											</td>
-										</tr>
+										
+
+										$sql = "SELECT * FROM ((certificado AS c 
+										JOIN usuario AS u  ON c.fk_usuario_id_usuario = u.id_usuario) 
+										JOIN situacao_certif AS s ON c.fk_situacao_certif_id_situacao_certif = s.id_situacao_certif)";
+
+										$resultado = $conn->query($sql);
+
+										if ($resultado->num_rows > 0) {
+											while($linha = $resultado->fetch_assoc()) {
+												
+												$id_atv 				= $linha["id_certificado"];
+												$nome_usuario 			= $linha["nome_usuario"];
+												$email_usuario 			= $linha["email_usuario"];
+												$situacao_certif 		= $linha["situacao_certif"];
+												$status_usuario 		= $linha["status_usuario"];
+
+												
+
+												if ( $status_usuario) {
+
+													?>
+													<tr>
+														<th ><?php echo $id_atv; ?></th>
+														<td class="tr-max"><?php echo $nome_usuario; ?></td>
+														<td class="tr-max text-center"><?php echo $email_usuario; ?></td>
+														<td class="tr-max text-center">
+															<label class="badge badge-primary text-wrap"><?php echo $situacao_certif; ?></label>
+														</td>
+
+
+														<td class="actions text-light text-center">
+															<div class="btn-group" role="group">
+																<a class="btn btn-primary btn-sm" title="Imprimir">
+																	<i class="material-icons sm-18">
+																		print
+																	</i>
+																</a>
+																<a class="btn btn-danger btn-sm" title="Cancelar aprovação">
+																	<i class="material-icons sm-18">
+																		cancel
+																	</i>
+																</a>
+																<a class="btn btn-success btn-sm" title="Assinar aprovação">
+																	<i class="material-icons sm-18">
+																		check
+																	</i>
+																</a>
+															</div>
+														</td>
+													</tr>
+													<?php 
+
+												}
+											}
+										}
+										?>
+
 									</tbody>
 								</table>
 							</div>
 
-							
+
 
 
 							<!-- Body alterável: -->
