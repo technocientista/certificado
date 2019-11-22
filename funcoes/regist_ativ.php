@@ -1,7 +1,7 @@
 <?php 
 session_start();
 include 'conn.php';
-$papel = $_SESSION['papel'];
+$responsavel = $_SESSION['id'];
 
 $sql = "INSERT INTO atividade ( nome_atv, data_inicial_atv, carga_horaria_atv, data_final_atv, local, descricao, responsavel)
 VALUES 
@@ -12,7 +12,7 @@ VALUES
 	'$_POST[data_final_atv]',
 	'$_POST[local]',
 	'$_POST[descricao]',
-	'{$papel}'
+	'{$responsavel}'
 	
 )";
 

@@ -61,7 +61,7 @@ include ('funcoes/verifica_login.php');
 										<?php 
 
 										include "funcoes/conn.php";
-
+										$usuario_logado = $_SESSION['id'];
 										
 
 										$sql = "SELECT * FROM atividade AS a JOIN situacao_ativ AS s ON a.fk_situacao_ativ_id_situacao_ativ = s.id_situacao_ativ ";
@@ -79,8 +79,9 @@ include ('funcoes/verifica_login.php');
 												$local 				= $linha["local"];
 												$status 			= $linha["status_atv"];
 												$situacao 			= $linha["situacao_ativ"];
+												$responsavel 		= $linha["responsavel"];
 
-												if ( $status) {
+												if ( $status && $usuario_logado==$responsavel) {
 
 													?>
 													<tr>
