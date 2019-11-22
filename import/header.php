@@ -7,6 +7,23 @@
                 home
             </i>
         </a>
+        <?php
+        include 'funcoes/verifica_session_start.php';
+
+        if (isset($_SESSION['id'])) {
+
+            ?>
+
+            <a class="navbar-brand btn btn-light " href="funcoes/logout.php">
+
+                <i class="material-icons text-success">
+                    logout
+                </i>
+            </a>
+            <?php  
+        }
+        ?>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,6 +37,6 @@
             </ul>
         </div>  
     </div>
-    
+
 </nav>
 </header>

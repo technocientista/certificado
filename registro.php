@@ -1,7 +1,7 @@
 <?php
-session_start();
+
 header('Content-Type: text/html; charset=utf-8');
-include ('funcoes/conn.php');
+
 //include ('funcoes/verifica_login.php');
 
 
@@ -18,12 +18,13 @@ include ('funcoes/conn.php');
 
 	<div class="wrapper">
 		<div class="main-view"> <!-- uiView: -->
-			<div class="container">
+			<div class="container bottom70">
 				<div class="row margin-top">
 					
 					<div class="col-lg-12">
 						<div class="jumbotron box box-success">
 							
+							<?php include 'funcoes/alert.php'; ?>
 							
 							<div class="box-header">
 								<h3 class="box-title">Registro</h3>
@@ -100,7 +101,7 @@ include ('funcoes/conn.php');
 
 									
 									<button class="btn btn-success" type="submit">Registrar</button>
-									<a class="btn btn-success" href="index.php" >*Registrar</a>
+									
 								</form>
 							</div>
 						</div>

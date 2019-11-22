@@ -1,3 +1,11 @@
+<?php
+include 'funcoes/verifica_session_start.php';
+header('Content-Type: text/html; charset=utf-8');
+
+include ('funcoes/verifica_login.php');
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +23,7 @@
 					<div class="col-lg-12">
 						<div class="jumbotron box box-success">
 							<!-- Body alterável: -->
+
 							<?php include 'funcoes/alert.php'; ?>
 
 							<h5>Atividades</h5>

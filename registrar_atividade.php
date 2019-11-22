@@ -1,3 +1,10 @@
+<?php
+include 'funcoes/verifica_session_start.php';
+header('Content-Type: text/html; charset=utf-8');
+include 'funcoes/verifica_login.php';
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,7 +72,7 @@
 
 
 									<button class="btn btn-success" type="submit">Registrar</button>
-									<a class="btn btn-success" href="atividades.php" >**Registrar</a>
+									
 								</form>
 							</div>
 							<!-- Body alterável: -->

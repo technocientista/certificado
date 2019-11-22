@@ -1,8 +1,8 @@
 <?php
-session_start();
+include 'funcoes/verifica_session_start.php';
 header('Content-Type: text/html; charset=utf-8');
-include ('funcoes/conn.php');
-//include ('funcoes/verifica_login.php');
+
+include 'funcoes/verifica_login.php';
 
 
 ?>
@@ -70,35 +70,39 @@ include ('funcoes/conn.php');
 										<tr class="text-center">
 											<th ><a>Nome</a></th>
 											<th class="tr-max"><a>CPF</a></th>
-											<th class="tr-max"><a>E-mail</a></th>
+											<th class="tr-max"><a>Curso</a></th>
 											<th class=""><a>Situação</a></th>
 											<th class="actions actions-90">Ações</th>
 										</tr>
 									</thead>
 									<tbody>
-										<?php 
+										<?php
+										include 'funcoes/conn.php';
 
-										
-
-										
-
-										$sql = "SELECT * FROM participa AS p 
-										INNER JOIN usuario AS u  ON p.fk_usuario_id_usuario = u.id_usuario
-										INNER JOIN situacao_certif AS s ON p.fk_situacao_certif_id_situacao_certif = s.id_situacao_certif
-										INNER JOIN atividade AS a ON p.fk_situacao_certif_id_situacao_certif = a.id_atv";
+										$sql = "SELECT * FROM (((participa AS p 
+										JOIN usuario AS u  ON p.fk_usuario_id_usuario = u.id_usuario)
+										JOIN situacao_ativ AS s ON p.fk_situacao_ativ_id_situacao_ativ = s.id_situacao_ativ)
+										JOIN atividade AS a ON p.fk_atv_id_atv = a.id_atv)";
 
 										$resultado = $conn->query($sql);
 
 										if ($resultado->num_rows > 0) {
 											while($linha = $resultado->fetch_assoc()) {
 												
-												$id_atv 				= $linha["id_certificado"];
-												$nome_usuario 			= $linha["nome_usuario"];
-												$email_usuario 			= $linha["email_usuario"];
-												$cpf_usuario 			= $linha["cpf_usuario"];
-												$id_situacao_certif 	= $linha["id_situacao_certif"];
-												$situacao_certif 		= $linha["situacao_certif"];
-												$status_usuario 		= $linha["status_usuario"];
+												$id_atv 				= $linha["id_atv"];
+												$nome_atv 				= $linha["nome_atv"];
+												$carga_horaria_atv 		= $linha["carga_horaria_atv"];
+
+												$id_usuario 			= $linha["fk_usuario_id_usuario"];
+												$status_usuario			= $linha["status_usuario"];
+												$nome_usuario			= $linha["nome_usuario"];
+												$email_usuario			= $linha["email_usuario"];
+												$cpf_usuario			= $linha["cpf_usuario"];
+
+												$id_situacao_ativ 		= $linha["id_situacao_ativ"];
+												$situacao_ativ 			= $linha["situacao_ativ"];
+
+												$id_participa 			= $linha["id_participa"];
 
 												
 
@@ -108,9 +112,9 @@ include ('funcoes/conn.php');
 													<tr>
 														<th ><?php echo $nome_usuario; ?></th>
 														<td class="tr-max"><?php echo $cpf_usuario; ?></td>
-														<td class="tr-max text-center"><?php echo $email_usuario; ?></td>
+														<td class="tr-max text-center"><?php echo $nome_atv; ?></td>
 														<td class=" text-center">
-															<label class="badge badge-primary text-wrap"><?php echo $situacao_certif; ?></label>
+															<label class="badge badge-primary text-wrap"><?php echo $situacao_ativ; ?></label>
 														</td>
 
 
