@@ -28,7 +28,10 @@
 							<div class="table-responsive-lg">
 								<ul class="nav nav-tabs">
 									<li class="nav-item">
-										<a class="nav-link active" href="#">Aprovados</a>
+										<a class="nav-link active" href="#">Todos</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Aprovados</a>
 									</li>
 									<li class="nav-item">
 										<a class="nav-link" href="#">Emitidos</a>
@@ -37,7 +40,7 @@
 										<a class="nav-link" href="#">Correção</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Cancelados</a>
+										<a class="nav-link " href="#" >Cancelados</a>
 									</li>
 								</ul>
 								<table id="tableAcao" class="table table-striped table-hover table-bordered table-condensed">

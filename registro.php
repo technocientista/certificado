@@ -47,7 +47,7 @@ include ('funcoes/conn.php');
 										</div>
 										<div class="col-md-4 mb-3">
 											<label for="validationServer02">Tipo de usuário</label>
-											<select class="form-control info is-invalid" name="fk_papel">
+											<select class="form-control info is-invalid" name="fk_papel_id_papel">
 												<option value=""></option>
 												<option value="1">Responsável</option>
 												<option value="2">Participante</option>

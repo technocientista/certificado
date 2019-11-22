@@ -19,7 +19,7 @@ if ($row == 1) {
 			# code...
 			$_SESSION['id'] = $linha["id_usuario"];
 			$id = $linha["id_usuario"];
-			$fk_papel = $linha["fk_papel"];
+			$fk_papel_id_papel = $linha["fk_papel_id_papel"];
 			//$status = $linha["status"];
 		}
 	}
@@ -45,15 +45,25 @@ if ($row == 1) {
 		exit();
 	}*/
 	
-	if ($fk_papel==1) {
+	if ($fk_papel_id_papel==1) {
 
 		$_SESSION['usuario'] = $usuario;
 		header('Location:../responsavel.php');
 		exit();
 	}
-	if ($fk_papel==2) {
+	if ($fk_papel_id_papel==2) {
 		$_SESSION['usuario'] = $usuario;
 		header('Location:../participante.php');
+		exit();
+	}
+	if ($fk_papel_id_papel==3) {
+		$_SESSION['usuario'] = $usuario;
+		header('Location:../diretor.php');
+		exit();
+	}
+	if ($fk_papel_id_papel==4) {
+		$_SESSION['usuario'] = $usuario;
+		header('Location:../administrador.php');
 		exit();
 	}
 	

@@ -19,8 +19,8 @@
 					<?php include 'funcoes/alert.php'; ?>
 					<div class=" text-center box box-success">
 						<h5><img src="img/logo_index.png" alt="NTI" height="128px"></h5>
-						<h4>CERTIFICA</h4>
-						<h4>O que é o Sistema de Certificados CERTIFICA?</h4>
+						<h4>CertIFCE</h4>
+						<h4>O que é o Sistema de Certificados CertIFCE?</h4>
 						<p class="small">
 							O Sistema de Certificados é o sistema de gerenciamento de certificados do IFCE.
 						</p>

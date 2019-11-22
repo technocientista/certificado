@@ -47,27 +47,45 @@ include ('funcoes/conn.php');
 
 							</div>
 							<div class="table-responsive-lg">
+								<ul class="nav nav-tabs">
+									<li class="nav-item">
+										<a class="nav-link active" href="#">Todos</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Aprovados</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Emitidos</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#">Correção</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link " href="#" >Cancelados</a>
+									</li>
+								</ul>
 								
 								<table id="tableAcao" class="table table-striped table-hover table-bordered table-condensed">
 									<thead>
 										<tr class="text-center">
-											<th ><a>#</a></th>
-											<th class="tr-max"><a>Nome</a></th>
+											<th ><a>Nome</a></th>
+											<th class="tr-max"><a>CPF</a></th>
 											<th class="tr-max"><a>E-mail</a></th>
-											<th class="tr-max"><a>Situação</a></th>
+											<th class=""><a>Situação</a></th>
 											<th class="actions actions-90">Ações</th>
 										</tr>
 									</thead>
 									<tbody>
 										<?php 
 
-										include "funcoes/conn.php";
+										
 
 										
 
-										$sql = "SELECT * FROM ((certificado AS c 
-										JOIN usuario AS u  ON c.fk_usuario_id_usuario = u.id_usuario) 
-										JOIN situacao_certif AS s ON c.fk_situacao_certif_id_situacao_certif = s.id_situacao_certif)";
+										$sql = "SELECT * FROM participa AS p 
+										INNER JOIN usuario AS u  ON p.fk_usuario_id_usuario = u.id_usuario
+										INNER JOIN situacao_certif AS s ON p.fk_situacao_certif_id_situacao_certif = s.id_situacao_certif
+										INNER JOIN atividade AS a ON p.fk_situacao_certif_id_situacao_certif = a.id_atv";
 
 										$resultado = $conn->query($sql);
 
@@ -77,6 +95,8 @@ include ('funcoes/conn.php');
 												$id_atv 				= $linha["id_certificado"];
 												$nome_usuario 			= $linha["nome_usuario"];
 												$email_usuario 			= $linha["email_usuario"];
+												$cpf_usuario 			= $linha["cpf_usuario"];
+												$id_situacao_certif 	= $linha["id_situacao_certif"];
 												$situacao_certif 		= $linha["situacao_certif"];
 												$status_usuario 		= $linha["status_usuario"];
 
@@ -86,10 +106,10 @@ include ('funcoes/conn.php');
 
 													?>
 													<tr>
-														<th ><?php echo $id_atv; ?></th>
-														<td class="tr-max"><?php echo $nome_usuario; ?></td>
+														<th ><?php echo $nome_usuario; ?></th>
+														<td class="tr-max"><?php echo $cpf_usuario; ?></td>
 														<td class="tr-max text-center"><?php echo $email_usuario; ?></td>
-														<td class="tr-max text-center">
+														<td class=" text-center">
 															<label class="badge badge-primary text-wrap"><?php echo $situacao_certif; ?></label>
 														</td>
 
@@ -118,6 +138,8 @@ include ('funcoes/conn.php');
 
 												}
 											}
+										}else{
+											echo 'Sem resultados';
 										}
 										?>
 
