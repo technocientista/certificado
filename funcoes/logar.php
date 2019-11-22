@@ -17,10 +17,10 @@ if ($row == 1) {
 	while($linha = $result->fetch_assoc()) {
 		if ($usuario==$linha["login"]) {
 			# code...
-			$_SESSION['id'] = $linha["id_usuario"];
-			$id = $linha["id_usuario"];
-			$fk_papel_id_papel = $linha["fk_papel_id_papel"];
-			$_SESSION['papel'] = $linha["fk_papel_id_papel"];
+			$_SESSION['id'] 	= $linha["id_usuario"];
+			$id 				= $linha["id_usuario"];
+			$fk_papel_id_papel 	= $linha["fk_papel_id_papel"];
+			$_SESSION['papel'] 	= $fk_papel_id_papel;
 			
 			//$status = $linha["status"];
 		}

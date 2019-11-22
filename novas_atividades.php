@@ -27,7 +27,7 @@ header('Content-Type: text/html; charset=utf-8');
 					<div class="box  box-success">
 						<div class="box-header">
 							<h4>Atividades</h4>
-							<?php echo 'Bem vindo <strong>'.isset($_SESSION['msg']).'</strong>'; ?>
+							<?php echo 'Bem vindo <strong>'.$_SESSION['usuario'].'</strong>'; ?>
 						</div>
 						<div class="box-body">
 							<p>Escolha qual atividade você deseja participar.</p>

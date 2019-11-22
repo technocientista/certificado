@@ -78,6 +78,8 @@ include 'funcoes/verifica_login.php';
 									<tbody>
 										<?php
 										include 'funcoes/conn.php';
+										$usuario_logado = $_SESSION['id'];
+										
 
 										$sql = "SELECT * FROM (((participa AS p 
 										JOIN usuario AS u  ON p.fk_usuario_id_usuario = u.id_usuario)
@@ -92,21 +94,24 @@ include 'funcoes/verifica_login.php';
 												$id_atv 				= $linha["id_atv"];
 												$nome_atv 				= $linha["nome_atv"];
 												$carga_horaria_atv 		= $linha["carga_horaria_atv"];
+												$responsavel 			= $linha["responsavel"];
 
 												$id_usuario 			= $linha["fk_usuario_id_usuario"];
 												$status_usuario			= $linha["status_usuario"];
 												$nome_usuario			= $linha["nome_usuario"];
 												$email_usuario			= $linha["email_usuario"];
 												$cpf_usuario			= $linha["cpf_usuario"];
+												
 
 												$id_situacao_ativ 		= $linha["id_situacao_ativ"];
 												$situacao_ativ 			= $linha["situacao_ativ"];
 
 												$id_participa 			= $linha["id_participa"];
 
+
 												
 
-												if ( $status_usuario) {
+												if ( $status_usuario && $usuario_logado==$responsavel) {
 
 													?>
 													<tr>

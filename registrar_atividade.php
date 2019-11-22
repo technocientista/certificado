@@ -67,8 +67,17 @@ include 'funcoes/verifica_login.php';
 												Digite uma data para o término da atividade.
 											</div>
 										</div>
+
 									</div>
-									
+									<div class="form-row">
+										<div class="col">
+											<label for="validationServer02">Descrição da atividade</label>
+											<input type="text" class="form-control info is-invalid" id="validationServer02" placeholder="Descrição da atividade" value="" required name="descricao">
+											<div class="invalid-feedback">
+												Digite a descrição da atividade
+											</div>
+										</div>
+									</div>
 
 
 									<button class="btn btn-success" type="submit">Registrar</button>

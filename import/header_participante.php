@@ -1,3 +1,4 @@
+<?php include 'funcoes/verifica_session_start.php'; ?>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
