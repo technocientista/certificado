@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 header('Content-Type: text/html; charset=utf-8');
 
 //include ('funcoes/verifica_login.php');
@@ -27,7 +27,13 @@ header('Content-Type: text/html; charset=utf-8');
 					<div class="box  box-success">
 						<div class="box-header">
 							<h4>Atividades</h4>
-							<?php echo 'Bem vindo <strong>'.$_SESSION['usuario'].'</strong>'; ?>
+
+							<?php 
+							if (isset($_SESSION['usuario'])) {
+								echo 'Bem vindo <strong>'.$_SESSION['usuario'].'</strong>'; 
+							}
+							
+							?>
 						</div>
 						<div class="box-body">
 							<p>Escolha qual atividade você deseja participar.</p>

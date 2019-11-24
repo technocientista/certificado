@@ -1,6 +1,6 @@
 <?php
-include 'funcoes/verifica_session_start.php';
-if (isset($_SESSION['check'])){
+
+if (isset($_SESSION['check'])):
 
 	?>
 
@@ -10,13 +10,11 @@ if (isset($_SESSION['check'])){
 			<span aria-hidden="true">&times;</span>
 		</button>
 	</div>
-
 	<?php
-}
-unset($_SESSION['check']);
 
-if (isset($_SESSION['alert_color'])) {
-	?>
+endif;
+unset($_SESSION['check']);
+if (isset($_SESSION['alert_color'])) {?>
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -25,8 +23,7 @@ if (isset($_SESSION['alert_color'])) {
 	</script>
 
 	<?php
-}else{
-	?>
+}else{?>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -37,5 +34,4 @@ if (isset($_SESSION['alert_color'])) {
 	<?php
 }
 unset($_SESSION['alert_color']);
-
 ?>

@@ -13,7 +13,10 @@ include ('funcoes/verifica_login.php');
 
 </head>
 <body>
-	<?php include 'import/header_responsavel.php'; ?>
+	<?php 
+	include 'import/header_responsavel.php'; 
+	include 'import/modal.php'; 
+	?>
 
 
 	<div class="wrapper">
@@ -35,18 +38,24 @@ include ('funcoes/verifica_login.php');
 
 									<button class="btn  btn-outline-success my-2 my-sm-0" type="submit">Filtrar</button>
 								</div>
-								<div class="col-lg-6 col-6 text-right">
-									<a class="btn btn-outline-success my-2 my-sm-0" href="registrar_atividade.php">Nova atividade</a>
-								</div>	
+
 								
 							</form>
 
-
-
-							
-							
 							
 							<div class="table-responsive-lg">
+								<ul class="nav nav-tabs">
+									<li class="nav-item" id="ativas">
+										<a  class="nav-link ativas_link active" href="#">Ativas</a>
+									</li>
+									<li class="nav-item" id="apagadas">
+										<a class="apagadas_link nav-link" href="#">Paradas</a>
+									</li>
+									<div class="col text-right">
+										<a class="btn btn-outline-success my-2 my-sm-0" href="registrar_atividade.php">Nova atividade</a>
+									</div>
+									
+								</ul>
 								<table id="tableAcao" class="table table-striped table-hover table-bordered table-condensed">
 									<thead>
 										<tr class="text-center">
@@ -58,66 +67,7 @@ include ('funcoes/verifica_login.php');
 										</tr>
 									</thead>
 									<tbody>
-										<?php 
-
-										include "funcoes/conn.php";
-										$usuario_logado = $_SESSION['id'];
-										
-
-										$sql = "SELECT * FROM atividade AS a JOIN situacao_ativ AS s ON a.fk_situacao_ativ_id_situacao_ativ = s.id_situacao_ativ ";
-
-										$resultado = $conn->query($sql);
-
-										if ($resultado->num_rows > 0) {
-											while($linha = $resultado->fetch_assoc()) {
-												
-												$id_atv 			= $linha["id_atv"];
-												$nome_atv 			= $linha["nome_atv"];
-												$data_inicial_atv 	= $linha["data_inicial_atv"];
-												$carga_horaria_atv 	= $linha["carga_horaria_atv"];
-												$data_final_atv 	= $linha["data_final_atv"];
-												$local 				= $linha["local"];
-												$status 			= $linha["status_atv"];
-												$situacao 			= $linha["situacao_ativ"];
-												$responsavel 		= $linha["responsavel"];
-
-												if ( $status && $usuario_logado==$responsavel) {
-
-													?>
-													<tr>
-														<th class="tr-max text-center"><?php echo $id_atv; ?></th>
-														<td ><?php echo $nome_atv; ?></td>
-														<td class="tr-max text-center"><?php echo $carga_horaria_atv; ?></td>
-														<td class="text-center">
-															<label class="badge badge-primary text-wrap"><?php echo $situacao; ?></label>
-														</td>
-
-
-														<td class="actions text-light text-center">
-															<div class="btn-group" role="group">
-																<a class="btn btn-primary btn-sm" title="Alterar situação">
-																	<i class="material-icons sm-18">
-																		update
-																	</i>
-																</a>
-																<a class="btn btn-danger btn-sm" title="Excluir atividade">
-																	<i class="material-icons sm-18">
-																		delete
-																	</i>
-																</a>
-																<a class="btn btn-success btn-sm" title="Detalhes">
-																	<i class="material-icons sm-18">
-																		search
-																	</i>
-																</a>
-															</div>
-														</td>
-													</tr>
-													<?php 
-												}
-											}
-										}
-										?>
+										<?php include 'import/tabela_atividades.php'; ?>
 									</tbody>
 								</table>
 							</div>
@@ -134,5 +84,6 @@ include ('funcoes/verifica_login.php');
 
 		<?php include 'import/footer.php'; ?>
 		<?php include 'import/import_script.php'; ?>
+		
 	</body>
 	</html>

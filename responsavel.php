@@ -13,7 +13,10 @@ include 'funcoes/verifica_login.php';
 
 </head>
 <body>
-	<?php include 'import/header_responsavel.php'; ?>
+	<?php 
+	include 'import/header_responsavel.php'; 
+	include 'import/modal.php'; 
+	?>
 
 
 	<div class="wrapper">
@@ -24,6 +27,7 @@ include 'funcoes/verifica_login.php';
 						<div class="jumbotron box box-success">
 							<!-- Body alterável: -->
 							<div >
+								<?php include 'funcoes/alert.php'; ?>
 								<h4>Área do Responsável</h4>
 								<?php echo 'Bem vindo <strong>'.$_SESSION['usuario'].'</strong>'; ?>
 								
@@ -47,24 +51,74 @@ include 'funcoes/verifica_login.php';
 
 							</div>
 							<div class="table-responsive-lg">
+								<?php
+								include 'funcoes/conn.php';
+								$usuario_logado = $_SESSION['id'];
+
+
+								$sql2 = "SELECT * FROM (((participa AS p 
+								JOIN usuario AS u  ON p.fk_usuario_id_usuario = u.id_usuario)
+								JOIN situacao_ativ AS s ON p.fk_situacao_ativ_id_situacao_ativ = s.id_situacao_ativ)
+								JOIN atividade AS a ON p.fk_atv_id_atv = a.id_atv)";
+
+								$resultado 	= $conn->query($sql2);
+								$todos 		= 0;
+								$aprovados 	= 0;
+								$reprovados = 0;
+								$emitidos 	= 0;
+								$correcao 	= 0;
+								$cancelados = 0;
+
+								if ($resultado->num_rows > 0) {
+									while($linha = $resultado->fetch_assoc()) {
+										$responsavel 				= $linha["responsavel"];
+										$status_participa 			= $linha["status_participa"];
+										$situacao					= $linha["id_situacao_ativ"];
+
+										if ($usuario_logado==$responsavel && $status_participa ) {
+											$todos++;
+										}
+										if ($usuario_logado==$responsavel  && $situacao == 3 && $status_participa ) {
+											$aprovados++;
+										}
+										if ($usuario_logado==$responsavel  && $situacao == 8 && $status_participa) {
+											$reprovados++;
+										}
+										if ($usuario_logado==$responsavel  && $situacao == 4 && $status_participa) {
+											$emitidos++;
+										}
+										if ($usuario_logado==$responsavel  && $situacao == 5 && $status_participa) {
+											$correcao++;
+										}
+										if ($usuario_logado==$responsavel  && $situacao == 6 && $status_participa) {
+											$cancelados++;
+										}
+									}
+
+								}
+								?>
+
 								<ul class="nav nav-tabs">
-									<li class="nav-item">
-										<a class="nav-link active" href="#">Todos</a>
+									<li class="nav-item" id="todos">
+										<a class="nav-link active" href="#">Todos <span class="badge badge-pill badge-success"><?php echo $todos; ?></span></a>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Aprovados</a>
+									<li class="nav-item" id="aprovados">
+										<a class="nav-link" href="#">Aprovados <span class="badge badge-pill badge-success"><?php echo $aprovados; ?></span></a>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Emitidos</a>
+									<li class="nav-item" id="reprovados">
+										<a class="nav-link" href="#">Reprovados <span class="badge badge-pill badge-success"><?php echo $reprovados; ?></span></a>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Correção</a>
+									<li class="nav-item" id="emitidos">
+										<a class="nav-link" href="#">Emitidos <span class="badge badge-pill badge-success"><?php echo $emitidos; ?></span></a>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link " href="#" >Cancelados</a>
+									<li class="nav-item" id="correcao">
+										<a class="nav-link" href="#">Correção <span class="badge badge-pill badge-success"><?php echo $correcao; ?></span></a>
+									</li>
+									<li class="nav-item" id="cancelados">
+										<a class="nav-link " href="#" >Cancelados <span class="badge badge-pill badge-success"><?php echo $cancelados; ?></span></a>
 									</li>
 								</ul>
-								
+
 								<table id="tableAcao" class="table table-striped table-hover table-bordered table-condensed">
 									<thead>
 										<tr class="text-center">
@@ -76,84 +130,11 @@ include 'funcoes/verifica_login.php';
 										</tr>
 									</thead>
 									<tbody>
-										<?php
-										include 'funcoes/conn.php';
-										$usuario_logado = $_SESSION['id'];
-										
-
-										$sql = "SELECT * FROM (((participa AS p 
-										JOIN usuario AS u  ON p.fk_usuario_id_usuario = u.id_usuario)
-										JOIN situacao_ativ AS s ON p.fk_situacao_ativ_id_situacao_ativ = s.id_situacao_ativ)
-										JOIN atividade AS a ON p.fk_atv_id_atv = a.id_atv)";
-
-										$resultado = $conn->query($sql);
-
-										if ($resultado->num_rows > 0) {
-											while($linha = $resultado->fetch_assoc()) {
-												
-												$id_atv 				= $linha["id_atv"];
-												$nome_atv 				= $linha["nome_atv"];
-												$carga_horaria_atv 		= $linha["carga_horaria_atv"];
-												$responsavel 			= $linha["responsavel"];
-
-												$id_usuario 			= $linha["fk_usuario_id_usuario"];
-												$status_usuario			= $linha["status_usuario"];
-												$nome_usuario			= $linha["nome_usuario"];
-												$email_usuario			= $linha["email_usuario"];
-												$cpf_usuario			= $linha["cpf_usuario"];
-												
-
-												$id_situacao_ativ 		= $linha["id_situacao_ativ"];
-												$situacao_ativ 			= $linha["situacao_ativ"];
-
-												$id_participa 			= $linha["id_participa"];
-
-
-												
-
-												if ( $status_usuario && $usuario_logado==$responsavel) {
-
-													?>
-													<tr>
-														<th ><?php echo $nome_usuario; ?></th>
-														<td class="tr-max"><?php echo $cpf_usuario; ?></td>
-														<td class="tr-max text-center"><?php echo $nome_atv; ?></td>
-														<td class=" text-center">
-															<label class="badge badge-primary text-wrap"><?php echo $situacao_ativ; ?></label>
-														</td>
-
-
-														<td class="actions text-light text-center">
-															<div class="btn-group" role="group">
-																<a class="btn btn-primary btn-sm" title="Imprimir">
-																	<i class="material-icons sm-18">
-																		print
-																	</i>
-																</a>
-																<a class="btn btn-danger btn-sm" title="Cancelar aprovação">
-																	<i class="material-icons sm-18">
-																		cancel
-																	</i>
-																</a>
-																<a class="btn btn-success btn-sm" title="Assinar aprovação">
-																	<i class="material-icons sm-18">
-																		check
-																	</i>
-																</a>
-															</div>
-														</td>
-													</tr>
-													<?php 
-
-												}
-											}
-										}else{
-											echo 'Sem resultados';
-										}
-										?>
+										<?php include 'import/tabela_responsavel.php'; ?>
 
 									</tbody>
 								</table>
+
 							</div>
 
 
@@ -168,5 +149,15 @@ include 'funcoes/verifica_login.php';
 
 		<?php include 'import/footer.php'; ?>
 		<?php include 'import/import_script.php'; ?>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.aprovados').find('.badge').addClass('badge-success');
+				$('.reprovados').find('.badge').addClass('badge-danger');
+				$('.emitidos').find('.badge').addClass('badge-success');
+				$('.correcao').find('.badge').addClass('badge-warning');
+				$('.cancelados').find('.badge').addClass('badge-danger');
+				$('.todos').find('.badge').addClass('badge-primary');
+			});
+		</script>
 	</body>
 	</html>

@@ -24,7 +24,7 @@ if ($resultado->num_rows > 0) {
 		if ( $status) {
 
 			?>
-			<div class="col-lg col-md-6 col-sm-6">
+			<div class="col-lg-3 col-md-6 col-sm-6">
 				<div class="box  box-success">
 					<div class="box-header">
 						<h5 class="box-title"><?php echo $nome_atv; ?></h5>
@@ -32,10 +32,10 @@ if ($resultado->num_rows > 0) {
 					<div class="box-body">
 						<img class="box box-success" src="img/01.jpg">
 						<p><?php echo $descricao; ?></p>
-						<p>Local: <?php echo $local; ?></p>
-						<p>Data inicial: <?php echo $data_inicial_atv; ?></p>
-						<p>Data final: <?php echo $data_final_atv; ?></p>
-						<p>Carga horária: <?php echo $carga_horaria_atv; ?></p>
+						<p><strong>Local: </strong><?php echo $local; ?></p>
+						<p><strong>Data inicial: </strong><?php echo $data_inicial_atv; ?></p>
+						<p><strong>Data final: </strong><?php echo $data_final_atv; ?></p>
+						<p><strong>Carga horária: </strong><?php echo $carga_horaria_atv; ?></p>
 						<p class="text-right"><a href="funcoes/particip_ativ.php?id=<?php echo $id_atv; ?>" class="btn btn-success" alt="Participar" title="Participar">Participar</a></p>
 					</div>
 				</div>
