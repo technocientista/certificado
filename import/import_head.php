@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="./Sistema de Certificados_ Users_files/animate.css">    
 	<link rel="stylesheet" href="./Sistema de Certificados_ Users_files/sicert.css">-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
-	<link rel="stylesheet"  href="css/estilo.css">
+	
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
 	rel="stylesheet">
+	<link rel="stylesheet"  href="css/estilo.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>

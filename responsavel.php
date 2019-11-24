@@ -74,6 +74,9 @@ include 'funcoes/verifica_login.php';
 										$responsavel 				= $linha["responsavel"];
 										$status_participa 			= $linha["status_participa"];
 										$situacao					= $linha["id_situacao_ativ"];
+										$id_participa 				= $linha["id_participa"];
+
+										
 
 										if ($usuario_logado==$responsavel && $status_participa ) {
 											$todos++;
@@ -98,11 +101,11 @@ include 'funcoes/verifica_login.php';
 								}
 								?>
 
-								<ul class="nav nav-tabs">
+								<ul class="nav nav-tabs ">
 									<li class="nav-item" id="todos">
-										<a class="nav-link active" href="#">Todos <span class="badge badge-pill badge-success"><?php echo $todos; ?></span></a>
+										<a class="nav-link active " href="#">Todos <span class="badge badge-pill badge-success"><?php echo $todos; ?></span></a>
 									</li>
-									<li class="nav-item" id="aprovados">
+									<li class="nav-item " id="aprovados">
 										<a class="nav-link" href="#">Aprovados <span class="badge badge-pill badge-success"><?php echo $aprovados; ?></span></a>
 									</li>
 									<li class="nav-item" id="reprovados">
@@ -119,11 +122,11 @@ include 'funcoes/verifica_login.php';
 									</li>
 								</ul>
 
-								<table id="tableAcao" class="table table-striped table-hover table-bordered table-condensed">
-									<thead>
+								<table id="tableAcao" class="table table-bordered table-condensed ">
+									<thead class="text-light bg-success">
 										<tr class="text-center">
-											<th ><a>Nome</a></th>
-											<th class="tr-max"><a>CPF</a></th>
+											<th ><a>#</a></th>
+											<th class="tr-max"><a>Nome</a></th>
 											<th class="tr-max"><a>Curso</a></th>
 											<th class=""><a>Situação</a></th>
 											<th class="actions actions-90">Ações</th>
@@ -159,5 +162,6 @@ include 'funcoes/verifica_login.php';
 				$('.todos').find('.badge').addClass('badge-primary');
 			});
 		</script>
+		<script src="js/dados.js"></script>
 	</body>
 	</html>

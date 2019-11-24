@@ -56,8 +56,8 @@ include ('funcoes/verifica_login.php');
 									</div>
 									
 								</ul>
-								<table id="tableAcao" class="table table-striped table-hover table-bordered table-condensed">
-									<thead>
+								<table id="tableAcao" class="table table-hover table-bordered table-condensed ">
+									<thead class="text-light bg-success">
 										<tr class="text-center">
 											<th class="tr-max"><a>#</a></th>
 											<th ><a>Atividade</a></th>

@@ -36,7 +36,7 @@ include ('funcoes/verifica_login.php');
 								</form>
 							</div>
 							<div class="table-responsive-lg">
-										
+
 								<?php
 								include 'funcoes/conn.php';
 								$usuario_logado = $_SESSION['id'];
@@ -103,9 +103,9 @@ include ('funcoes/verifica_login.php');
 										<a class="nav-link " href="#" >Cancelados <span class="badge badge-pill badge-success"><?php echo $cancelados; ?></span></a>
 									</li>
 								</ul>
-								<table id="tableAcao" class="table table-striped table-hover table-bordered table-condensed">
-									<thead>
-										<tr>
+								<table id="tableAcao" class="table table-bordered table-condensed ">
+									<thead class="text-light bg-success">
+										<tr class="text-center">
 											<th class="tr-max"><a>#</a></th>
 											<th ><a>Atividade</a></th>
 											<th class="tr-max"><a>Carga horária</a></th>
@@ -114,72 +114,7 @@ include ('funcoes/verifica_login.php');
 										</tr>
 									</thead>
 									<tbody>
-										<?php 
-										include 'funcoes/conn.php';
-										$id = $_SESSION['id'];
-
-										$sql = "SELECT * FROM (((participa AS p 
-										JOIN usuario AS u  ON p.fk_usuario_id_usuario = u.id_usuario)
-										JOIN situacao_ativ AS s ON p.fk_situacao_ativ_id_situacao_ativ = s.id_situacao_ativ)
-										JOIN atividade AS a ON p.fk_atv_id_atv = a.id_atv)";
-
-										$resultado = $conn->query($sql);
-
-										if ($resultado->num_rows > 0) {
-											
-											while($linha = $resultado->fetch_assoc()) {
-												
-												$id_atv 				= $linha["id_atv"];
-												$nome_atv 				= $linha["nome_atv"];
-												$carga_horaria_atv 		= $linha["carga_horaria_atv"];
-
-												$id_usuario 			= $linha["fk_usuario_id_usuario"];
-												
-
-												$id_situacao_ativ 		= $linha["id_situacao_ativ"];
-												$situacao_ativ 			= $linha["situacao_ativ"];
-
-												$id_participa 			= $linha["id_participa"];
-												$status_participa 		= $linha['status_participa'];
-
-												
-												if ($id == $id_usuario && $status_participa == 1) {
-
-													if ($status_participa) {
-														if ( $id_situacao_ativ == 3) {
-															echo "<tr class='aprovados'>";
-															include 'import/linha_tabela_participante.php';
-														}
-														if ($id_situacao_ativ == 8) {
-															echo "<tr class='reprovados'>";
-															include 'import/linha_tabela_participante.php';
-
-														}
-														if ($id_situacao_ativ == 4) {
-															echo "<tr class='emitidos'>";
-															include 'import/linha_tabela_participante.php';
-
-														}
-														if ($id_situacao_ativ == 5) {
-															echo "<tr class='correcao'>";
-															include 'import/linha_tabela_participante.php';
-
-														}
-														if ($id_situacao_ativ == 6) {
-															echo "<tr class='cancelados'>";
-															include 'import/linha_tabela_participante.php';
-
-														}
-														if ($id_situacao_ativ == 1 || $id_situacao_ativ == 2 || $id_situacao_ativ == 7 || $id_situacao_ativ == 9 ) {
-															echo "<tr class='todos'>";
-															include 'import/linha_tabela_participante.php';
-														}
-													} 
-												}
-											}
-										}
-										
-										?>
+										<?php include 'import/tabela_participante.php'; ?>
 
 
 									</tbody>
@@ -208,5 +143,6 @@ include ('funcoes/verifica_login.php');
 				$('.todos').find('.badge').addClass('badge-primary');
 			});
 		</script>
+		<script src="js/dados.js"></script>
 	</body>
 	</html>
