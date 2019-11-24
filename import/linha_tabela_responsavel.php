@@ -30,18 +30,26 @@
 		</a>
 	</div>
 </td>
-</tr>
-<tr class="card card-body collapse" id="mais-<?php echo $id_participa; ?>">
-	<td colspan="5" class="col-card">
-		<div  >
-			<div >
-				<p><strong>Nome: </strong><?php echo $nome_usuario; ?></p> 
-				<p><strong>Login: </strong><?php echo $login; ?></p>
-				<p><strong>CPF: </strong><?php echo $cpf_usuario; ?></p>
-				<p><strong>Telefone: </strong><?php echo $tel_usuario; ?></p>
-				<p><strong>E-mail: </strong><?php echo $email_usuario; ?></p>
-			</div>
+<div class="collapse" id="mais-<?php echo $id_participa; ?>">
+	<div class="card card-body ">
+		<a data-toggle="collapse" href="#mais-<?php echo $id_participa; ?>" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-sm btn-danger text-light text-right"  title="Fechar">
 
-		</div>
-	</td>
+			<i class="material-icons sm-18 ">
+				close
+			</i>
+
+		</a>
+
+		<p><strong>Nome: </strong><?php echo $nome_usuario; ?></p> 
+		<p><strong>Login: </strong><?php echo $login; ?></p>
+		<p><strong>CPF: </strong><?php echo $cpf_usuario; ?></p>
+
+
+		<p><strong>Telefone: </strong><?php echo $tel_usuario; ?></p>
+		<p><strong>E-mail: </strong><?php echo $email_usuario; ?></p>
+
+
+	</div>
 </tr>
+
+

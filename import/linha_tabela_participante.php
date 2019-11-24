@@ -30,39 +30,44 @@
 </td>
 
 </tr>
-<tr>
-	<td colspan="5" class="col-card">
-		<div class="collapse" id="mais-<?php echo $id_participa; ?>">
-			<div class="card card-body">
-				<p><strong>Descrição: </strong><?php echo $descricao; ?></p> 
-				<p><strong>Local: </strong><?php echo $local; ?></p>
-				<p><strong>Data inicial: </strong><?php echo $data_inicial_atv; ?></p>
-				<p><strong>Data final: </strong><?php echo $data_final_atv; ?></p>
-				<p><strong>Status: </strong>
-					<?php 
-					if ($situacao_ativ2 == 1) {?>
-						<label class="badge badge-primary badge-pill text-wrap">Aguardando início</label>
-						<?php
-					}
-					if ($situacao_ativ2 == 6) {?>
-						<label class="badge badge-danger badge-pill text-wrap">Cancelado</label>
-						<?php
-					}
-					if ($situacao_ativ2 == 7) {?>
-						<label class="badge badge-success badge-pill text-wrap">Concluído</label>
-						<?php
-					}
-					if ($situacao_ativ2 == 9) {?>
-						<label class="badge badge-info badge-pill text-wrap">Iniciado</label>
-						<?php
-					}
-					?>
-					
 
-				</p>
-			</div>
+<div class="collapse" id="mais-<?php echo $id_participa; ?>">
+	<div class="card card-body">
+		<a data-toggle="collapse" href="#mais-<?php echo $id_participa; ?>" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-danger text-right"  title="Fechar">
+			
+			<i class="material-icons sm-18 ">
+				close
+			</i>
 
-		</div>
-	</td>
-</tr>
+		</a>
+		<p><strong>Descrição: </strong><?php echo $descricao; ?></p> 
+		<p><strong>Local: </strong><?php echo $local; ?></p>
+		<p><strong>Data inicial: </strong><?php echo $data_inicial_atv; ?></p>
+
+		<p><strong>Data final: </strong><?php echo $data_final_atv; ?></p>
+		<p><strong>Status: </strong>
+			<?php 
+			if ($situacao_ativ2 == 1) {?>
+				<label class="badge badge-primary badge-pill text-wrap">Aguardando início</label>
+				<?php
+			}
+			if ($situacao_ativ2 == 6) {?>
+				<label class="badge badge-danger badge-pill text-wrap">Cancelado</label>
+				<?php
+			}
+			if ($situacao_ativ2 == 7) {?>
+				<label class="badge badge-success badge-pill text-wrap">Concluído</label>
+				<?php
+			}
+			if ($situacao_ativ2 == 9) {?>
+				<label class="badge badge-info badge-pill text-wrap">Iniciado</label>
+				<?php
+			}
+			?>
+
+
+		</p>
+	</div>
+</div>
+
 

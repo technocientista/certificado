@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+}
+
 body{
     background-color: #ecf0f5;
 }
@@ -69,11 +73,12 @@ a.nav-link:link
     width: 100%;
 
     color: #eee;
-    padding: 10px 0 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
     margin: 0;
     float: left;
-    position:fixed;
-    bottom:0;
+    position:absolute;
+    bottom: auto;
     display: block;
 }
 
@@ -190,6 +195,45 @@ a.nav-link:link
     vertical-align: top;
     border-top: 0px solid #dee2e6;
 }
-.card {
+
+.card{
     position: absolute;
+    display: block;
+}
+
+.collapsing{
+    position: absolute;
+}
+
+.collapse{
+    position: absolute;
+    background:#000;
+    width: 100%;
+    -webkit-transition:background 1s ease-out;
+    -moz-transition:background 1s ease-out;
+    -o-transition:background 1s ease-out;
+    -ms-transition:background 1s ease-out;
+}
+
+.collapse:hover{
+   background:#ccc;
+   -webkit-transition:background 1s ease-out;
+   -moz-transition:background 1s ease-out;
+   -o-transition:background 1s ease-out;
+   -ms-transition:background 1s ease-out;
+}
+
+
+
+.btn-group-vertical>.btn, .btn-group>.btn {
+    position: unset;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.btn-group, .btn-group-vertical {
+    position: unset;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    vertical-align: middle;
 }
