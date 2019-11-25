@@ -205,23 +205,7 @@ a.nav-link:link
     position: absolute;
 }
 
-.collapse{
-    position: absolute;
-    background:#000;
-    width: 100%;
-    -webkit-transition:background 1s ease-out;
-    -moz-transition:background 1s ease-out;
-    -o-transition:background 1s ease-out;
-    -ms-transition:background 1s ease-out;
-}
 
-.collapse:hover{
-   background:#ccc;
-   -webkit-transition:background 1s ease-out;
-   -moz-transition:background 1s ease-out;
-   -o-transition:background 1s ease-out;
-   -ms-transition:background 1s ease-out;
-}
 
 
 
