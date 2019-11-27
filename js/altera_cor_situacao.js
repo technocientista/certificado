@@ -1,0 +1,9 @@
+$(document).ready(function(){
+	$('.aprovados').find('.badge').addClass('badge-success');
+	$('.reprovados').find('.badge').addClass('badge-danger');
+	$('.emitidos').find('.badge').addClass('badge-success');
+	$('.correcao').find('.badge').addClass('badge-warning');
+	$('.assinados').find('.badge').addClass('badge-warning');
+	$('.cancelados').find('.badge').addClass('badge-danger');
+	$('.todos').find('.badge').addClass('badge-primary');
+});
