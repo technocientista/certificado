@@ -6,7 +6,7 @@ $(document).ready(function(){
 		$('.dataComfirmOK').attr('href', href);
 		$('.modal-body').html(body);
 		$('#title').html(title);
-
+		console.log(body);
 
 	});
 });
