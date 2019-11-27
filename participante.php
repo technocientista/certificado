@@ -30,10 +30,9 @@ include ('funcoes/verifica_login.php');
 								<h4>Área do participante</h4>
 								<?php echo 'Bem vindo <strong>'.$_SESSION['usuario'].'</strong>'; ?>
 								<p>Veja aqui a sua lista de atividades e suas situações.</p>
-								<form class="form-inline">
-									<input class="form-control mr-sm-2" type="search" placeholder="Filtrar" aria-label="Search">
-									<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Filtrar</button>
-								</form>
+
+								<?php include 'import/filtrar.php'; ?>
+
 							</div>
 							<div class="table-responsive-lg">
 
@@ -135,5 +134,6 @@ include ('funcoes/verifica_login.php');
 		<?php include 'import/import_script.php'; ?>
 		<script src="js/altera_cor_situacao.js"></script>
 		<script src="js/dados.js"></script>
+		<script src="js/filtra.js"></script>
 	</body>
 	</html>

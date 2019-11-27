@@ -31,16 +31,8 @@ include ('funcoes/verifica_login.php');
 
 							<h5>Atividades</h5>
 							<p>Veja aqui a sua lista de atividades e suas situações.</p>
-							<form class="form-inline row">
 
-								<div class="col-lg-6 col-6">
-									<input class="form-control mr-sm-2" type="search" placeholder="Digite sua busca" aria-label="Search">
-
-									<button class="btn  btn-outline-success my-2 my-sm-0" type="submit">Filtrar</button>
-								</div>
-
-								
-							</form>
+							<?php include 'import/filtrar.php'; ?>
 
 							
 							<div class="table-responsive-lg">
@@ -84,6 +76,7 @@ include ('funcoes/verifica_login.php');
 
 		<?php include 'import/footer.php'; ?>
 		<?php include 'import/import_script.php'; ?>
+		<script src="js/filtra.js"></script>
 		
 	</body>
 	</html>

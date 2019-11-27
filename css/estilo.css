@@ -230,6 +230,10 @@ a.nav-link:link
     }
 }
 div.modal-dialog.ajuda{
-        max-width: 100%;
-        margin: 28px;
-    }
+    max-width: 100%;
+    margin: 28px;
+}
+
+.invisivel{
+    display: none;
+}

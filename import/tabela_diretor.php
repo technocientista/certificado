@@ -38,36 +38,36 @@ if ($resultado->num_rows > 0) {
 
 		if ($status_usuario && $status_participa) {
 			if ( $id_situacao_ativ == 3) {
-				echo "<tr class='aprovados'>";
+				echo "<tr class='aprovados linha'>";
 				include 'linha_tabela_diretor.php';
 			}
 			if ($id_situacao_ativ == 8) {
-				echo "<tr class='reprovados'>";
+				echo "<tr class='reprovados linha'>";
 				include 'linha_tabela_diretor.php';
 
 			}
 			if ($id_situacao_ativ == 4) {
-				echo "<tr class='emitidos'>";
+				echo "<tr class='emitidos linha'>";
 				include 'linha_tabela_diretor.php';
 
 			}
 			if ($id_situacao_ativ == 5) {
-				echo "<tr class='correcao'>";
+				echo "<tr class='correcao linha'>";
 				include 'linha_tabela_diretor.php';
 
 			}
 			if ($id_situacao_ativ == 6) {
-				echo "<tr class='cancelados'>";
+				echo "<tr class='cancelados linha'>";
 				include 'linha_tabela_diretor.php';
 
 			}
 			if ($id_situacao_ativ == 2) {
-				echo "<tr class='assinados'>";
+				echo "<tr class='assinados linha'>";
 				include 'linha_tabela_diretor.php';
 				
 			}
 			if ($id_situacao_ativ == 1 || $id_situacao_ativ == 7 || $id_situacao_ativ == 9 ) {
-				echo "<tr class='todos'>";
+				echo "<tr class='todos linha'>";
 				include 'linha_tabela_diretor.php';
 			}
 		}

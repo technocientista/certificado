@@ -6,7 +6,7 @@
 		</i>
 	</a>
 </th>
-<td class="tr-max"><?php echo $nome_usuario; ?></td>
+<td class="tr-max td01"><?php echo $nome_usuario; ?></td>
 <td class="tr-max text-center"><?php echo $nome_atv; ?></td>
 <td class=" text-center"><label class="badge badge-pill text-wrap"><?php echo $situacao_ativ;?></label></td>
 

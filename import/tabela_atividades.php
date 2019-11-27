@@ -26,9 +26,9 @@ if ($resultado->num_rows > 0) {
 			if ( $status && $id_situacao_ativ != 6) {
 
 				?>
-				<tr class="ativas ">
+				<tr class="ativas linha">
 					<th class="tr-max text-center"><?php echo $id_atv; ?></th>
-					<td ><?php echo $nome_atv; ?></td>
+					<td class="td01"><?php echo $nome_atv; ?></td>
 					<td class="tr-max text-center"><?php echo $carga_horaria_atv; ?></td>
 					<td class="text-center">
 						<?php 

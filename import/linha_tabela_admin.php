@@ -1,4 +1,4 @@
-<tr>
+<tr class="linha">
 	<th class="text-center">
 		<a data-toggle="collapse" href="#mais-<?php echo $id_usuario; ?>" role="button" aria-expanded="false" aria-controls="collapseExample" class=""  title="Detalhes do usuário">
 			<i class="material-icons sm-18">
@@ -9,10 +9,10 @@
 	<?php 
 	;
 	if ($status_usuario) {?>
-		<td class="text-success"><strong><?php echo $nome_usuario; ?></strong></td>
+		<td class="text-success td01"><strong><?php echo $nome_usuario; ?></strong></td>
 		<?php
 	}else{?>
-		<td class="text-danger"><strong><?php echo $nome_usuario; ?></strong></td>
+		<td class="text-danger td01"><strong><?php echo $nome_usuario; ?></strong></td>
 		<?php
 	}
 	?>

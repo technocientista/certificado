@@ -27,25 +27,12 @@ include ('funcoes/verifica_login.php');
 							<!-- Body alterável: -->
 							<div >
 								<?php include 'funcoes/alert.php'; ?>
-								<h4>Área do Responsável</h4>
+								<h4>Área do Diretor</h4>
 								<?php echo 'Bem vindo <strong>'.$_SESSION['usuario'].'</strong>'; ?>
 								<p>Veja aqui a lista de aprovados aguardando emissão de certificados.</p>
-								<div class="form-row align-items-center">
-									<div class="col-auto col-lg-3">
-										<label class="sr-only" for="inlineFormInputGroup">Nome ou CPF</label>
-										<div class="input-group mb-2 ">
-											<div class="input-group-prepend">
-												<div class="input-group-text bg-success text-light">
-													<i class="material-icons ">
-														search
-													</i>
-												</div>
-											</div>
-											<input type="text" class="form-control form-control-lg" id="inlineFormInputGroup" placeholder="Nome ou CPF">
-										</div>
-									</div>
-									
-								</div>
+
+								<?php include 'import/filtrar.php'; ?>
+								
 							</div>
 							<div class="table-responsive-lg">
 								<?php
@@ -121,7 +108,7 @@ include ('funcoes/verifica_login.php');
 									<thead class="text-light bg-success">
 										<tr class="text-center">
 											<th ><a>#</a></th>
-											<th class="tr-max"><a>Nome</a></th>
+											<th class=""><a>Nome</a></th>
 											<th class="tr-max"><a>Curso</a></th>
 											<th class=""><a>Situação</a></th>
 											<th class="actions actions-90">Ações</th>
@@ -147,5 +134,6 @@ include ('funcoes/verifica_login.php');
 		<?php include 'import/footer.php'; ?>
 		<?php include 'import/import_script.php'; ?>
 		<script src="js/altera_cor_situacao.js"></script>
+		<script src="js/filtra.js"></script>
 	</body>
 	</html>

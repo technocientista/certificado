@@ -33,21 +33,7 @@ include 'funcoes/verifica_login.php';
 								
 								<p>Veja aqui a sua lista de participantes e suas situações.</p>
 								
-								<div class="form-row align-items-center">
-									<div class="col-auto col-lg-3">
-										<label class="sr-only" for="inlineFormInputGroup">Username</label>
-										<div class="input-group mb-2 ">
-											<div class="input-group-prepend">
-												<div class="input-group-text bg-success text-light">
-													<i class="material-icons ">
-														search
-													</i>
-												</div>
-											</div>
-											<input type="text" class="form-control form-control-lg" id="inlineFormInputGroup" placeholder="Nome ou CPF">
-										</div>
-									</div>
-								</div>
+								<?php include 'import/filtrar.php'; ?>
 
 							</div>
 							<div class="table-responsive-lg">
@@ -154,5 +140,6 @@ include 'funcoes/verifica_login.php';
 		<?php include 'import/import_script.php'; ?>
 		<script src="js/altera_cor_situacao.js"></script>
 		<script src="js/dados.js"></script>
+		<script src="js/filtra.js"></script>
 	</body>
 	</html>
