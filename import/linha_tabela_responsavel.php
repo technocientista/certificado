@@ -1,6 +1,6 @@
 
 <th class="text-center">
-	<a data-toggle="collapse" href="#mais-<?php echo $id_participa; ?>" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-success btn-sm"  title="Visualizar atividade">
+	<a data-toggle="collapse" href="#mais-<?php echo $id_participa; ?>" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-success"  title="Visualizar atividade">
 		<i class="material-icons sm-18">
 			add
 		</i>
@@ -32,7 +32,7 @@
 </td>
 <div class="collapse" id="mais-<?php echo $id_participa; ?>">
 	<div class="card card-body ">
-		<a data-toggle="collapse" href="#mais-<?php echo $id_participa; ?>" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-sm btn-danger text-light text-right"  title="Fechar">
+		<a data-toggle="collapse" href="#mais-<?php echo $id_participa; ?>" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-danger text-right"  title="Fechar">
 
 			<i class="material-icons sm-18 ">
 				close

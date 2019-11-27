@@ -70,7 +70,7 @@ include ('funcoes/verifica_login.php');
 										if ($usuario_logado==$participante  && $situacao == 8 && $status_participa) {
 											$reprovados++;
 										}
-										if ($usuario_logado==$participante  && $situacao == 4 && $status_participa) {
+										if ($usuario_logado==$participante  && $situacao == 4 || $situacao == 2 && $status_participa) {
 											$emitidos++;
 										}
 										if ($usuario_logado==$participante  && $situacao == 5 && $status_participa) {
@@ -133,16 +133,7 @@ include ('funcoes/verifica_login.php');
 
 		<?php include 'import/footer.php'; ?>
 		<?php include 'import/import_script.php'; ?>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$('.aprovados').find('.badge').addClass('badge-success');
-				$('.reprovados').find('.badge').addClass('badge-danger');
-				$('.emitidos').find('.badge').addClass('badge-success');
-				$('.correcao').find('.badge').addClass('badge-warning');
-				$('.cancelados').find('.badge').addClass('badge-danger');
-				$('.todos').find('.badge').addClass('badge-primary');
-			});
-		</script>
+		<script src="js/altera_cor_situacao.js"></script>
 		<script src="js/dados.js"></script>
 	</body>
 	</html>

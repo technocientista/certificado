@@ -225,11 +225,11 @@ a.nav-link:link
 
 @media (min-width: 576px){
     div.modal-dialog.ajuda{
-        max-width: 100%;
-        margin: 1.75rem auto;
+        width: auto;
+        margin: 28px auto;
     }
 }
 div.modal-dialog.ajuda{
-        width: auto;
-        margin: 1.75rem auto;
+        max-width: 100%;
+        margin: 28px;
     }

@@ -135,13 +135,11 @@
 
 					var mid = 'm'+id;
 
-
-					var title = $(this).html();
+					var title = $('#'+id).html();
 					var data_confirm = $('#'+mid).html();
 
-
-					$(this).attr('data-confirm', data_confirm);
-					$(this).attr('title', title);
+					$('#'+id).attr('data-confirm', data_confirm);
+					$('#'+id).attr('title', title);
 
 					$('.modal-dialog').addClass('ajuda');
 					$('.modal-footer a').hide();

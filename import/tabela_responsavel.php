@@ -59,12 +59,18 @@ if ($resultado->num_rows > 0) {
 					include 'linha_tabela_responsavel.php';
 					
 				}
+				if ($id_situacao_ativ == 2) {
+					echo "<tr class='assinados'>";
+					include 'linha_tabela_responsavel.php';
+
+				}
 				if ($id_situacao_ativ == 6) {
 					echo "<tr class='cancelados'>";
 					include 'linha_tabela_responsavel.php';
-					
+
 				}
-				if ($id_situacao_ativ == 1 || $id_situacao_ativ == 2 || $id_situacao_ativ == 7 || $id_situacao_ativ == 9 ) {
+
+				if ($id_situacao_ativ == 1 || $id_situacao_ativ == 7 || $id_situacao_ativ == 9 ) {
 					echo "<tr class='todos'>";
 					include 'linha_tabela_responsavel.php';
 				}

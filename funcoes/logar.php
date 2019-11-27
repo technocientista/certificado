@@ -65,7 +65,7 @@ if ($row == 1) {
 	}
 	if ($fk_papel_id_papel==4) {
 		$_SESSION['usuario'] = $usuario;
-		header('Location:../administrador.php');
+		header('Location:../admin.php');
 		exit();
 	}
 	

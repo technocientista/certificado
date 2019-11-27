@@ -87,7 +87,7 @@ include 'funcoes/verifica_login.php';
 										if ($usuario_logado==$responsavel  && $situacao == 8 && $status_participa) {
 											$reprovados++;
 										}
-										if ($usuario_logado==$responsavel  && $situacao == 4 && $status_participa) {
+										if ($usuario_logado==$responsavel  && $situacao == 2 || $situacao == 4 && $status_participa) {
 											$emitidos++;
 										}
 										if ($usuario_logado==$responsavel  && $situacao == 5 && $status_participa) {
@@ -112,7 +112,7 @@ include 'funcoes/verifica_login.php';
 										<a class="nav-link" href="#">Reprovados <span class="badge badge-pill badge-success"><?php echo $reprovados; ?></span></a>
 									</li>
 									<li class="nav-item" id="emitidos">
-										<a class="nav-link" href="#">Emitidos <span class="badge badge-pill badge-success"><?php echo $emitidos; ?></span></a>
+										<a class="nav-link" href="#">Emitidos/Assinados <span class="badge badge-pill badge-success"><?php echo $emitidos; ?></span></a>
 									</li>
 									<li class="nav-item" id="correcao">
 										<a class="nav-link" href="#">Correção <span class="badge badge-pill badge-success"><?php echo $correcao; ?></span></a>
@@ -152,16 +152,7 @@ include 'funcoes/verifica_login.php';
 
 		<?php include 'import/footer.php'; ?>
 		<?php include 'import/import_script.php'; ?>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$('.aprovados').find('.badge').addClass('badge-success');
-				$('.reprovados').find('.badge').addClass('badge-danger');
-				$('.emitidos').find('.badge').addClass('badge-success');
-				$('.correcao').find('.badge').addClass('badge-warning');
-				$('.cancelados').find('.badge').addClass('badge-danger');
-				$('.todos').find('.badge').addClass('badge-primary');
-			});
-		</script>
+		<script src="js/altera_cor_situacao.js"></script>
 		<script src="js/dados.js"></script>
 	</body>
 	</html>

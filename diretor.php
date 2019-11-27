@@ -14,7 +14,8 @@ include ('funcoes/verifica_login.php');
 
 </head>
 <body>
-	<?php include 'import/header.php'; ?>
+	<?php include 'import/header.php'; 
+	include 'import/modal.php'; ?>
 
 
 	<div class="wrapper">
@@ -25,102 +26,114 @@ include ('funcoes/verifica_login.php');
 						<div class="jumbotron box box-success">
 							<!-- Body alterável: -->
 							<div >
-								<h4>Área do Diretor</h4>
-								<h5>Bem vindo Diretor</h5>
+								<?php include 'funcoes/alert.php'; ?>
+								<h4>Área do Responsável</h4>
+								<?php echo 'Bem vindo <strong>'.$_SESSION['usuario'].'</strong>'; ?>
 								<p>Veja aqui a lista de aprovados aguardando emissão de certificados.</p>
-								<form class="form-inline">
-									<input class="form-control mr-sm-2" type="search" placeholder="Cpf ou Matrícula" aria-label="Search">
-									<input class="form-control mr-sm-2" type="search" placeholder="Nome" aria-label="Search">
-									<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Filtrar</button>
-								</form>
+								<div class="form-row align-items-center">
+									<div class="col-auto col-lg-3">
+										<label class="sr-only" for="inlineFormInputGroup">Nome ou CPF</label>
+										<div class="input-group mb-2 ">
+											<div class="input-group-prepend">
+												<div class="input-group-text bg-success text-light">
+													<i class="material-icons ">
+														search
+													</i>
+												</div>
+											</div>
+											<input type="text" class="form-control form-control-lg" id="inlineFormInputGroup" placeholder="Nome ou CPF">
+										</div>
+									</div>
+									
+								</div>
 							</div>
 							<div class="table-responsive-lg">
-								<ul class="nav nav-tabs">
-									<li class="nav-item">
-										<a class="nav-link active" href="#">Todos</a>
+								<?php
+								include 'funcoes/conn.php';
+								$usuario_logado = $_SESSION['id'];
+
+
+								$sql2 = "SELECT * FROM (((participa AS p 
+								JOIN usuario AS u  ON p.fk_usuario_id_usuario = u.id_usuario)
+								JOIN situacao_ativ AS s ON p.fk_situacao_ativ_id_situacao_ativ = s.id_situacao_ativ)
+								JOIN atividade AS a ON p.fk_atv_id_atv = a.id_atv)";
+
+								$resultado 	= $conn->query($sql2);
+								$todos 		= 0;
+								$aprovados 	= 0;
+								$reprovados = 0;
+								$emitidos 	= 0;
+								$correcao 	= 0;
+								$cancelados = 0;
+
+								if ($resultado->num_rows > 0) {
+									while($linha = $resultado->fetch_assoc()) {
+										$responsavel 				= $linha["responsavel"];
+										$status_participa 			= $linha["status_participa"];
+										$situacao					= $linha["id_situacao_ativ"];
+										$id_participa 				= $linha["id_participa"];
+										
+
+										if ($status_participa ) {
+											$todos++;
+										}
+										if ($situacao == 3 && $status_participa ) {
+											$aprovados++;
+										}
+										if ($situacao == 8 && $status_participa) {
+											$reprovados++;
+										}
+										if ($situacao == 2 || $situacao == 4 && $status_participa) {
+											$emitidos++;
+										}
+										if ($situacao == 5 && $status_participa) {
+											$correcao++;
+										}
+										if ($situacao == 6 && $status_participa) {
+											$cancelados++;
+										}
+									}
+
+								}
+								?>
+
+								<ul class="nav nav-tabs ">
+									<li class="nav-item" id="todos">
+										<a class="nav-link active " href="#">Todos <span class="badge badge-pill badge-success"><?php echo $todos; ?></span></a>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Aprovados</a>
+									<li class="nav-item " id="aprovados">
+										<a class="nav-link" href="#">Aprovados <span class="badge badge-pill badge-success"><?php echo $aprovados; ?></span></a>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Emitidos</a>
+									<li class="nav-item" id="reprovados">
+										<a class="nav-link" href="#">Reprovados <span class="badge badge-pill badge-success"><?php echo $reprovados; ?></span></a>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Correção</a>
+									<li class="nav-item" id="emitidos">
+										<a class="nav-link" href="#">Emitidos/Assinados <span class="badge badge-pill badge-success"><?php echo $emitidos; ?></span></a>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link " href="#" >Cancelados</a>
+									<li class="nav-item" id="correcao">
+										<a class="nav-link" href="#">Correção <span class="badge badge-pill badge-success"><?php echo $correcao; ?></span></a>
+									</li>
+									<li class="nav-item" id="cancelados">
+										<a class="nav-link " href="#" >Cancelados <span class="badge badge-pill badge-success"><?php echo $cancelados; ?></span></a>
 									</li>
 								</ul>
-								<table id="tableAcao" class="table table-striped table-hover table-bordered table-condensed">
-									<thead>
-										<tr>
-											<th ><a>Nome</a></th>
-											<th class="tr-max"><a>E-mail</a></th>
-											<th class="tr-max"><a>Matrícula</a></th>
-											<th class="tr-max"><a>Situação</a></th>
+								<table id="tableAcao" class="table table-bordered table-condensed ">
+									<thead class="text-light bg-success">
+										<tr class="text-center">
+											<th ><a>#</a></th>
+											<th class="tr-max"><a>Nome</a></th>
+											<th class="tr-max"><a>Curso</a></th>
+											<th class=""><a>Situação</a></th>
 											<th class="actions actions-90">Ações</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<th >Antonio José de Assis</th>
-											<td class="tr-max">antoniojose@gmail.com</td>
-											<td class="tr-max text-center">20191312000234</td>
-											<td class="tr-max text-center"><label class="badge badge-primary text-wrap">Aguardando</label></td>
-											
+										<?php include 'import/tabela_diretor.php'; ?>
 
-											<td class="actions text-light text-center">
-												<div class="btn-group" role="group">
-													<a class="btn btn-primary btn-sm" title="Imprimir">
-														<i class="material-icons sm-18">
-															print
-														</i>
-													</a>
-													<a class="btn btn-danger btn-sm" title="Cancelar aprovação">
-														<i class="material-icons sm-18">
-															cancel
-														</i>
-													</a>
-													<a class="btn btn-success btn-sm" title="Assinar aprovação">
-														<i class="material-icons sm-18">
-															check
-														</i>
-													</a>
-												</div>
-											</td>
-										</tr>
-										<tr>
-											<th >Maria Malta Ribeiro</th>
-											<td class="tr-max">mariaribeiro@gmail.com</td>
-											<td class="tr-max text-center">20191312000234</td>
-											<td class="tr-max text-center"><label class="badge badge-success text-wrap">Assinado</label></td>
-											
-
-											<td class="actions text-light text-center">
-												<div class="btn-group" role="group">
-													<a class="btn btn-primary btn-sm" title="Imprimir">
-														<i class="material-icons sm-18">
-															print
-														</i>
-													</a>
-													<a class="btn btn-danger btn-sm" title="Cancelar aprovação">
-														<i class="material-icons sm-18">
-															cancel
-														</i>
-													</a>
-													<a class="btn btn-success btn-sm" title="Assinar aprovação">
-														<i class="material-icons sm-18">
-															check
-														</i>
-													</a>
-												</div>
-											</td>
-										</tr>
 									</tbody>
 								</table>
-							</div>
 
+							</div>
 							
 
 
@@ -133,5 +146,6 @@ include ('funcoes/verifica_login.php');
 
 		<?php include 'import/footer.php'; ?>
 		<?php include 'import/import_script.php'; ?>
+		<script src="js/altera_cor_situacao.js"></script>
 	</body>
 	</html>

@@ -1,6 +1,6 @@
 
 <th class="tr-max text-center text-light">
-	<a data-toggle="collapse" href="#mais-<?php echo $id_participa; ?>" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-success btn-sm"  title="Visualizar atividade">
+	<a data-toggle="collapse" href="#mais-<?php echo $id_participa; ?>" role="button" aria-expanded="false" aria-controls="collapseExample" class="text-success"  title="Visualizar atividade">
 		<i class="material-icons sm-18">
 			add
 		</i>
