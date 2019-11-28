@@ -1438,39 +1438,39 @@ tela baseado nas informaçōes fornecidas.
 
 
 
-    <p>A Listagem de Pessoas encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-user"></i> Pessoas</p>
+    <p>A Listagem de Pessoas encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-user"></i>Responsável</p>
 <!--
                 <div class="box box-success col-xs-12">
                     <div class="box-header">
                     -->
                     <p>
-                      A tela de Listagem de Pessoas serve para listar Pessoas relacionadas à algum projeto.
+                      A tela de Listagem de Pessoas serve para listar Pessoas relacionadas à alguma atividade.
                     </p>
 
                     <p>
-                      Na tela de Listagem de Pessoas, é apresentada uma lista com as Pessoas da UFMS,
+                      Na tela de Listagem de Pessoas, é apresentada uma lista com as Pessoas do IFCE,
                       onde para cada pessoa, há as opções para Visualizar
                       <a class="btn btn-primary btn-xs" title="Visualizar Curso">
                         <i title="Visualizar" class="fa fa-search"></i>
                       </a>,
-                      Editar
-                      <a class="btn btn-success btn-xs">
+                      checkbox
+                      <a class="btn btn-danger btn-xs"><i title="Remover Curso" class="fa fa-trash"></i></a>
+                    Reprovar
+                    </p>
+                     <a class="btn btn-success btn-xs">
                         <i title="Editar Curso" class="fa fa-pencil"></i>
                       </a>
-                      e Remover Pessoa
-                      <a class="btn btn-danger btn-xs"><i title="Remover Curso" class="fa fa-trash"></i></a>
-                      , dependendo da permissão de acesso do usuário.
-                    </p>
+                     Aprovar
                     <table id="tableProjeto" class="table table-striped table-hover table-bordered table-condensed">
                       <thead>
                         <tr>
                           <th><a>#</a></th>
                           <th><a>Nome</a></th>
                           <th><a>CPF</a></th>
-                          <th><a>Passaporte</a></th>
+                        
                           <th><a>E-mail</a></th>
                           <th><a>Telefone</a></th>
-                          <th><a>País</a></th>
+                         
                           <th class="actions">Ações</th>
                         </tr>
                       </thead>
@@ -1479,10 +1479,10 @@ tela baseado nas informaçōes fornecidas.
                           <td>1</td>
                           <td>João José Antônio de Souza</td>
                           <td>15971134507</td>
-                          <td>Não Informado</td>
+
                           <td>zeantonio@ufms.aluno.br</td>
                           <td>5567991991111</td>
-                          <td>Brasil</td>
+                        
 
                           <td class="actions">
                             <div class="btn-group col-md-12" role="group">
@@ -1502,10 +1502,10 @@ tela baseado nas informaçōes fornecidas.
                           <td>2</td>
                           <td>Rémi Pierre</td>
                           <td>Não Informado</td>
-                          <td>05AT47557</td>
+                         
                           <td>remipierre@gmail.com</td>
                           <td>33144111030</td>
-                          <td>França</td>
+                       
 
                           <td class="actions">
                             <div class="btn-group col-md-12" role="group">
@@ -1533,9 +1533,6 @@ tela baseado nas informaçōes fornecidas.
 
                       </p><ul>
                         <li>Nome;</li>
-                        <li>E-mail;</li>
-                        <li>CPF;</li>
-                        <li>Passaporte (Documento);</li>
                       </ul>
                       Uma vez preenchido qualquer um dos campos, ou todos, o resultado da filtragem será mostrado na
                       tela baseado nas informaçōes fornecidas.
@@ -1551,35 +1548,32 @@ tela baseado nas informaçōes fornecidas.
 
 
 
-    <p>A Adição de Pessoas encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-briefcase"></i>  Projetos &gt; <i aria-hidden="true" class="glyphicon glyphicon-pencil"></i>  Editar &gt; <i aria-hidden="true" class="glyphicon glyphicon-file"></i> Certificado &gt; <i aria-hidden="true" class="glyphicon glyphicon-plus"></i> Adicionar Pessoa</p>
+    <p>A Adição de Pessoas encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt;  </i> Registra-se</p>
 <!--
                 <div class="box box-success col-xs-12">
                     <div class="box-header">
                     -->
 
                     <p>
-                      A tela de Nova Pessoa serve para o Coordenador do projeto cadastrar uma pessoa nova ao projeto.
-                      A princípio, as informações a serem cadastradas são:
+                      A tela registre-se serve para adicionar um participante ao sistema. 
 
                     </p>
                     <ul>
-                      <li>Nome;</li>
-                      <li>País;</li>
-                      <li>Telefone;</li>
-                      <li>E-mail;</li>
+                      <li>Nome Completo;</li>
                       <li>CPF;</li>
-                      <li>Passaporte (Documento);</li>
+                      <li>Tipo de usuário;</li>
+                      <li>E-mail;</li>
+                      <li>Telefone;</li>
+                      <li>Login;</li>
+                      <li>Senha;</li>
                     </ul>
                     <p>
                       Após o preenchimento das informações acima, é necessário clicar no botão
-                      <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i>  Salvar</button>.
+                      <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i>Registrar</button>.
                     </p>
 
                     <p>
-                      No modo de adição, há a opção de cancelar a adição da pessoa, é necessário clicar no botão
-                      <button type="button" class="btn btn-danger"><i class="fa fa-ban"></i> Cancelar</button>.
-                    </p>
-
+         
 
 
 <!--
@@ -2575,835 +2569,7 @@ tela baseado nas informaçōes fornecidas.
 </div>
 -->
 </div>
-<!--Divisória de conteúdo modal-->
-<div id="m32" class="modalAjuda collapse">
-
-
-
-    <p>A Listagem de Modalidades encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-list"></i>  Modalidades</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-                    <p>
-                      A tela de Listagem de Modalidades serve para listar os modalidades já criadas.
-                    </p>
-                    <p>
-                      Na tela de Listagem de Modalidades, é apresentada uma lista,
-                      onde para cada modalidade, há as opções para Visualizar
-                      <a class="btn btn-primary btn-xs" title="Visualizar Curso">
-                        <i title="Visualizar" class="fa fa-search"></i>
-                      </a>,
-                      Editar
-                      <a class="btn btn-warning btn-xs">
-                        <i title="Editar Curso" class="fa fa-pencil"></i>
-                      </a>
-                      e Remover
-                      <a class="btn btn-danger btn-xs"><i title="Remover Curso" class="fa fa-trash"></i></a>
-                      dependendo da permissão de acesso do usuário.
-
-
-                    </p>
-                    <table id="tableModalidades" class="table table-striped table-hover table-condensed">
-                      <thead>
-                        <tr>
-                          <th><a>Descrição</a></th>
-                          <th class="actions">Ações</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Evento de Extensão</td>
-                          <td class="actions">
-                            <div class="btn-group col-md-12" role="group">
-                              <a class="btn btn-primary btn-xs" title="Visualizar Curso">
-                                <i data-toggle="tooltip" data-placement="top" title="Visualizar" class="fa fa-search"></i>
-                              </a>
-                              <a class="btn btn-warning btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Editar Curso" class="fa fa-pencil"></i>
-                              </a>
-                              <a class="btn btn-danger btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Remover Curso" class="fa fa-trash"></i>
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody></table>
-<!--
-</div>
-</div>
--->
-</div>
-
-<!--Divisória de conteúdo modal-->
-<div id="m33" class="modalAjuda collapse">
-
-
-
-
-    <p>A Adição de Modalidades encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-list"></i>  Modalidades&gt; <i aria-hidden="true" class="glyphicon glyphicon-plus"></i> Nova Modalidade </p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-
-                    <p>
-                      A tela de Adição de Modalidades serve para cadastrar uma nova Modalidade.
-                      A princípio, o dado a ser inserido é:
-                    </p>
-                    <ul>
-                      <li>Descrição: descrição da modalidade</li>
-
-                    </ul>
-                    <p>
-                      Após o preenchimento das informações acima, é necessário clicar no botão
-                      <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i>  Salvar</button>.
-                    </p>
-
-                    <p>
-                      No modo de adição, há a opção de cancelar a adição de modalidade, é necessário clicar no botão
-                      <button type="button" class="btn btn-danger"><i class="fa fa-ban"></i> Cancelar</button>.
-                    </p>
-<!--
-</div>
-</div>
--->
-</div>
-<!--Divisória de conteúdo modal-->
-<div id="m34" class="modalAjuda collapse">
-
-
-
-
-    <p>A Visualização de Modalidades encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-list"></i>  Modalidades &gt; <i aria-hidden="true" class="glyphicon glyphicon-search"></i> Visualizar</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-                    <p>
-                      A tela para Visualizar Modalidades serve para visualização dos detalhes sobre a modalidade selecionada.
-                    </p>
-                    <p>
-                      A informação da modalidade selecioanda a ser visualizada é:
-                    </p>
-                    <ul>
-                      <li>Descrição: descrição da modalidade</li>
-                    </ul>
-                    <p>
-                      Para editar a modalidade, primeiro, é necessário clicar no botão
-                      <button type="button" class="btn btn-primary "> Editar Modalidade</button>.
-                      Aparecerá uma nova janela, na qual será possível a edição dos dados da modalidade selecionada.
-                    </p>
-                    <p>
-                      No modo de visualização, há a opção de apagar a modalidade, é necessário clicar no botão
-                      <button type="button" class="btn btn-danger">Apagar Modalidade</button> e depois confirmar.
-                    </p>
-
-<!--
-</div>
-</div>
--->
-</div>
-<!--Divisória de conteúdo modal-->
-<div id="m35" class="modalAjuda collapse">
-
-
-
-    <p>A Edição de Modalidades encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-list"></i>  Modalidades &gt; <i aria-hidden="true" class="glyphicon glyphicon-pencil"></i> Editar</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-
-                    <p>
-                      A tela para Editar Modalidades serve para edição dos dados do mesmo.
-                    </p>
-                    <p>
-                      As informação de Modalides a ser editada é:
-                    </p>
-                    <ul>
-                      <li>Descrição: descrição da modalidade</li>
-                    </ul>
-                    <p>
-                      No modo de edição, após o preenchimento das informações acima, é necessário clicar no botão
-                      <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i>  Salvar</button>.
-                    </p>
-                    <p>
-                      Caso deseje cancelar as modificações basta clicar no botão
-                      <button type="button" class="btn btn-danger">Cancelar</button>.
-                    </p>
-<!--
-</div>
-</div>
--->
-</div>
-
-<!--Divisória de conteúdo modal-->
-<div id="m36" class="modalAjuda collapse">
-
-
-
-    <p>A Listagem do Modelo Textual encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-file-o"></i> Modelo Textual</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-                    <p>
-                      A tela de Listagem de Modelos Textuais serve para listar os modelos textuais já criados.
-                    </p>
-
-                    <p>
-                      Na tela de Listagem de Modelos Textuais, é apresentada uma lista ,
-                      onde para cada modelo, há as opções para Visualizar
-                      <a class="btn btn-primary btn-xs" title="Visualizar Curso">
-                        <i title="Visualizar" class="fa fa-search"></i>
-                      </a>,
-                      Editar
-                      <a class="btn btn-success btn-xs">
-                        <i title="Editar Curso" class="fa fa-pencil"></i>
-                      </a>
-                      e Remover
-                      <a class="btn btn-danger btn-xs"><i title="Remover Curso" class="fa fa-trash"></i></a>
-                      dependendo da permissão de acesso do usuário.
-
-
-                    </p>
-                    <p>
-                      <strong>*Modelos Textual alterado e/ou deletado não afetará os certificados já gerados.</strong>
-                    </p>
-                    <table id="tableModeloTextual" class="table table-striped table-hover table-condensed">
-                      <thead>
-                        <tr>
-                          <th><a>Título</a></th>
-                          <th class="actions text-center">Ações</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Modelo 1</td>
-                          <td class="actions text-center">
-                            <a class="btn btn-primary btn-xs" title="Visualizar Curso">
-                              <i data-toggle="tooltip" data-placement="top" title="Visualizar" class="fa fa-search"></i>
-                            </a>
-                            <a class="btn btn-success btn-xs">
-                              <i data-toggle="tooltip" data-placement="top" title="Editar Curso" class="fa fa-pencil"></i>
-                            </a>
-                            <a class="btn btn-danger btn-xs">
-                              <i data-toggle="tooltip" data-placement="top" title="Remover Curso" class="fa fa-trash"></i>
-                            </a>
-
-                          </td>
-                        </tr>
-                      </tbody></table>
-
-                      <p></p>
-<!--
-</div>
-</div>
--->
-</div>
-
-<!--Divisória de conteúdo modal-->
-<div id="m37" class="modalAjuda collapse">
-
-
-
-
-    <p>A Adição de Modelo Textual encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-file-o"></i>  Modelo Textual &gt; <i aria-hidden="true" class="glyphicon glyphicon-plus"></i> Novo Modelo Textual. </p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-
-                    <p>
-                      A tela de Novo Modelo Textual serve para  cadastrar um novo modelo ao projeto.
-                      A princípio, os dados a serem inseridos são:
-
-                    </p>
-                    <ul>
-                      <li>Título: nome do modelo textual</li>
-                      <li>Texto: texto padrão do modelo textual contendo no máximo 300 caracteres</li>
-                    </ul>
-                    <p>
-                      Após o preenchimento das informações acima, é necessário clicar no botão <button type="button" class="btn btn-success">Salvar</button>.
-                    </p>
-
-                    <p>
-                      No modo de adição, há a opção de cancelar a adição de modelo, é necessário clicar no botão
-                      <button type="button" class="btn btn-danger">Cancelar</button>.
-                    </p>
-
-<!--
-</div>
-</div>
--->
-</div>
-<!--Divisória de conteúdo modal-->
-<div id="m38" class="modalAjuda collapse">
-
-
-
-    <p>A Visualização do Modelo Textual encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-file-o"></i>  Modelo Textual &gt; <i aria-hidden="true" class="glyphicon glyphicon-search"></i> Visualizar</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-                    <p>
-                      A tela para Visualizar Modelo Textual serve para visualização detalhada sobre o modelo textual selecionado.
-                    </p>
-                    <p>
-                      As informações do modelo textual a serem visualizadas são:
-                    </p>
-                    <ul>
-                      <li>Título: nome do modelo textual</li>
-                      <li>Texto: texto padrão do modelo textual contendo no máximo 300 caracteres</li>
-                    </ul>
-                    <p>
-                      Para editar o modelo textual, primeiro, é necessário clicar no botão
-                      <button type="button" class="btn btn-primary "> Editar Modelo</button>.
-                      Aparecerá uma nova janela, na qual será possível a edição dos dados do modelo selecionado.
-                    </p>
-                    <p>
-                      No modo de visualização, há a opção de apagar o modelo, é necessário clicar no botão
-                      <button type="button" class="btn btn-danger">Apagar Modelo</button> e depois confirmar.
-                    </p>
-
-                    <strong>*Modelos Textual alterado e/ou deletado não afetará os certificados já gerados.</strong>
-
-<!--
-</div>
-</div>
--->
-</div>
-
-<!--Divisória de conteúdo modal-->
-<div id="m39" class="modalAjuda collapse">
-
-
-
-
-    <p>A Edição do Modelo Textual encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-file-o"></i>  Modelo Textual &gt; <i aria-hidden="true" class="glyphicon glyphicon-pencil"></i> Editar</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-
-                    <p>
-                      A tela para Editar Modelo Textual serve para edição dos dados do mesmo.
-                    </p>
-                    <p>
-                      As informações do Modelo Textual a serem editadas são:
-                    </p>
-                    <ul>
-                      <li>Título: nome do modelo textual</li>
-                      <li>Texto: texto padrão do modelo textual contendo no máximo 300 caracteres</li>
-                    </ul>
-                    <p>
-                      No modo de edição, após o preenchimento das informações acima, é necessário clicar no botão
-                      <button type="button" class="btn btn-success">Salvar</button>.
-                    </p>
-                    <p>
-                      Caso deseje cancelar as modificações basta clicar no botão
-                      <button type="button" class="btn btn-danger">Cancelar</button> e depois confirmar.
-                    </p>
-
-                    <strong>*Modelos Textual alterado e/ou deletado não afetará os certificados já gerados.</strong>
-<!--
-</div>
-</div>
--->
-</div>
-</div>
-
-<!--Modelo GRÁFICO-->
-<!--Divisória de conteúdo modal-->
-<div id="m40" class="modalAjuda collapse">
-
-
-<!--Divisória de conteúdo modal-->
-<div id="m41" class="modalAjuda collapse">
-
-
-<!--Divisória de conteúdo modal-->
-<div id="m42" class="modalAjuda collapse">
-
-
-<!--Divisória de conteúdo modal-->
-<div id="m43" class="modalAjuda collapse">
-
-
-<!--Divisória de conteúdo modal-->
-<div id="m44" class="modalAjuda collapse">
-
-
-
-
-    <p>A Listagem de Tipo de Pessoas encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configuraçōes &gt; <i aria-hidden="true" class="glyphicon glyphicon-users"></i> Tipo de Pessoas</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-                    <p>
-                      A tela de Listagem de Tipo de Pessoas serve para listar todos os tipos já cadastradas no sistema.
-                    </p>
-
-                    <p>
-                      Na tela de Listagem de Tipo de Pessoas, é apresentada uma lista com os tipo já cadastrados,
-                      onde para cada um, há as opções para Editar
-                      <a class="btn btn-success btn-xs">
-                        <i title="Editar Curso" class="fa fa-pencil"></i>
-                      </a>
-                      e Remover
-                      <a class="btn btn-danger btn-xs">
-                        <i title="Remover Curso" class="fa fa-trash"></i>
-                      </a>.
-                    </p>
-                    <table id="tableProjeto" class="table table-striped table-hover table-condensed">
-                      <thead>
-                        <tr>
-                          <th><a>Nome</a></th>
-                          <th class="actions">Ações</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Coordenador</td>
-                          <td class="actions ">
-                            <div class="btn-group col-md-12" role="group">
-                              <a class="btn btn-success btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Editar Tipo Pessoa" class="fa fa-pencil"></i>
-                              </a>
-                              <a class="btn btn-danger btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Remover Tipo Pessoa" class="fa fa-trash"></i>
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Público-Alvo</td>
-                          <td class="actions">
-                            <div class="btn-group col-md-12" role="group">
-                              <a class="btn btn-success btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Editar Tipo Pessoa" class="fa fa-pencil"></i>
-                              </a>
-                              <a class="btn btn-danger btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Remover Tipo Pessoa" class="fa fa-trash"></i>
-                              </a>
-                            </div>
-                          </td>
-                        </tr><tr>
-                          <td>Membros</td>
-                          <td class="actions">
-                            <div class="btn-group col-md-12" role="group">
-                              <a class="btn btn-success btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Editar Tipo Pessoa" class="fa fa-pencil"></i>
-                              </a>
-                              <a class="btn btn-danger btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Remover Tipo Pessoa" class="fa fa-trash"></i>
-                              </a>
-                            </div>
-                          </td>
-                        </tr><tr>
-                          <td>Outros</td>
-                          <td class="actions">
-                            <div class="btn-group col-md-12" role="group">
-                              <a class="btn btn-success btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Editar Tipo Pessoa" class="fa fa-pencil"></i>
-                              </a>
-                              <a class="btn btn-danger btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Remover Tipo Pessoa" class="fa fa-trash"></i>
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Staff</td>
-                          <td class="actions">
-                            <div class="btn-group col-md-12" role="group">
-                              <a class="btn btn-success btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Editar Tipo Pessoa" class="fa fa-pencil"></i>
-                              </a>
-                              <a class="btn btn-danger btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Remover Tipo Pessoa" class="fa fa-trash"></i>
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-
-                    <p>
-                      Os tipos de pessoas que estão em uso em projetos não podem ser excluídos.
-                    </p>
-                    <p>É preciso tomar cuidado ao editar tipos de pessoas que estão em uso para que elas continuem
-                    relevantes para os projetos onde estão sendo usadas.</p>
-
-<!--
-</div>
-</div>
--->
-</div>
-<!--Divisória de conteúdo modal-->
-<div id="m45" class="modalAjuda collapse">
-
-
-
-    <p>A Adição de Tipo de Pessoas encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configuraçōes &gt; <i aria-hidden="true" class="glyphicon glyphicon-users"></i>  Tipo de Pessoas &gt; <i aria-hidden="true" class="glyphicon glyphicon-plus"></i> Novo Tipo de Pessoas</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-
-                    <p>
-                      A tela de Novo Tipo de Pessoa serve para cadastrar um novo tipo de pessoa no sistema.
-                      A princípio, a informação a ser cadastrada é:
-
-                    </p>
-                    <ul>
-                      <li>Tipo de Pessoa;</li>
-                    </ul>
-                    <p>
-                      Após o preenchimento da informação acima, é necessário clicar no botão
-                      <button type="button" class="btn btn-success">Salvar</button>.
-                    </p>
-
-                    <p>
-                      No modo de adição, há a opção de cancelar a adição do tipo de pessoa, é necessário clicar no botão
-                      <button type="button" class="btn btn-danger">Cancelar</button>.
-                    </p>
-
-
-
-<!--
-</div>
-</div>
--->
-</div>
-
-<!--Divisória de conteúdo modal-->
-<div id="m46" class="modalAjuda collapse">
-
-
-
-    <p>A Edição de Tipo de Pessoas encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configuraçōes &gt; <i aria-hidden="true" class="glyphicon glyphicon-users"></i>  Tipo de Pessoas &gt; <i aria-hidden="true" class="glyphicon glyphicon-pencil"></i> Editar</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-
-                    <p>
-                      A tela de Editar Tipo de Pessoa tem a função de editar um tipo de pessoa préviamente cadastrado no sistema.
-                      A princípio, a informação a ser editada é:
-
-                    </p>
-                    <ul>
-                      <li>Tipo de Pessoa;</li>
-                    </ul>
-                    <p>
-                      Após o edição da informações acima, é necessário clicar no botão <button type="button" class="btn btn-success">Salvar</button>.
-                    </p>
-
-                    <p>
-                      No modo de edição, há a opção de apagar o tipo de pessoa, é necessário clicar no botão
-                      <button type="button" class="btn btn-danger">Apagar</button>.
-                    </p>
-
-                    <p>É preciso tomar cuidado ao editar tipos de pessoas que estão em uso para que elas continuem
-                    relevantes para os projetos onde estão sendo usadas.</p>
-
-
-<!--
-</div>
-</div>
--->
-</div>
-
-<!--Divisória de conteúdo modal-->
-<div id="m47" class="modalAjuda collapse">
-
-
-
-    <p>A Listagem de Tipo de Ação encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-cubes"></i>  Tipo de Ação</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-                    <p>
-                      A tela de Listagem de Tipo de Ação serve para listar os tipos de ação já criados.
-                    </p>
-                    <p>
-                      Na tela de Listagem de Tipo de Ação é apresentada uma lista,
-                      onde para cada tipo de ação há as opções
-                      Editar
-                      <a class="btn btn-warning btn-xs">
-                        <i title="Editar Curso" class="fa fa-pencil"></i>
-                      </a>
-                      e Remover
-                      <a class="btn btn-danger btn-xs"><i title="Remover Curso" class="fa fa-trash"></i></a>
-                      dependendo da permissão de acesso do usuário.
-
-
-                    </p>
-                    <table id="tableModalidades" class="table table-striped table-hover table-condensed">
-                      <thead>
-                        <tr>
-                          <th><a>Descrição</a></th>
-                          <th class="actions">Ações</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Aula</td>
-                          <td class="actions">
-                            <div class="btn-group col-md-12" role="group">
-                              <a class="btn btn-warning btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Editar Curso" class="fa fa-pencil"></i>
-                              </a>
-                              <a class="btn btn-danger btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Remover Curso" class="fa fa-trash"></i>
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody></table>
-<!--
-</div>
-</div>
--->
-</div>
-
-<!--Divisória de conteúdo modal-->
-<div id="m48" class="modalAjuda collapse">
-
-
-
-    <p>A Adição de Tipo de Ação encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-cubes"></i>  Tipo de Ação&gt; <i aria-hidden="true" class="glyphicon glyphicon-plus"></i> Novo </p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-
-                    <p>
-                      A tela de Adição de Tipo de Ação serve para cadastrar um novo Tipo de Ação.
-                      A princípio, o dado a ser inserido é:
-                    </p>
-                    <ul>
-                      <li>Descrição: descrição do Tipo de Ação</li>
-
-                    </ul>
-                    <p>
-                      Após o preenchimento das informações acima, é necessário clicar no botão <button type="button" class="btn btn-success">Salvar</button>.
-                    </p>
-
-                    <p>
-                      No modo de adição, há a opção de cancelar a adição de Tipo de Ação, é necessário clicar no botão
-                      <button type="button" class="btn btn-danger">Cancelar</button>.
-                    </p>
-<!--
-</div>
-</div>
--->
-</div>
-
-<!--Divisória de conteúdo modal-->
-<div id="m49" class="modalAjuda collapse">
-
-
-
-
-    <p>A Edição de Tipo de Ação encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-cubes"></i>  Tipo de Ação &gt; <i aria-hidden="true" class="glyphicon glyphicon-pencil"></i> Editar</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-
-                    <p>
-                      A tela para Editar Tipo de Ação serve para edição dos dados do mesmo.
-                    </p>
-                    <p>
-                      A informação de Tipo de Ação a ser editada é:
-                    </p>
-                    <ul>
-                      <li>Descrição: descrição do Tipo de Ação</li>
-                    </ul>
-                    <p>
-                      No modo de edição, após o preenchimento das informações acima, é necessário clicar no botão
-                      <button type="button" class="btn btn-success">Salvar</button>.
-                    </p>
-                    <p>
-                      Caso deseje cancelar as modificações basta clicar no botão
-                      <button type="button" class="btn btn-danger">Cancelar</button>.
-                    </p>
-<!--
-</div>
-</div>
--->
-</div>
-<!--Divisória de conteúdo modal-->
-<div id="m50" class="modalAjuda collapse">
-
-
-
-
-    <p>A Listagem de Tipo de Atividade encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-id-card"></i>  Tipo de Atividade</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-                    <p>
-                      A tela de Listagem de Tipo de Atividade serve para listar os tipos de atividade já criadas.
-                    </p>
-                    <p>
-                      Na tela de Listagem de Tipo de Atividade, é apresentada uma lista,
-                      onde para cada tipo de atividade, há as opções para Visualizar
-                      <a class="btn btn-primary btn-xs" title="Visualizar Curso">
-                        <i title="Visualizar" class="fa fa-search"></i>
-                      </a>,
-                      Editar
-                      <a class="btn btn-warning btn-xs">
-                        <i title="Editar Curso" class="fa fa-pencil"></i>
-                      </a>
-                      e Remover
-                      <a class="btn btn-danger btn-xs"><i title="Remover Curso" class="fa fa-trash"></i></a>
-                      dependendo da permissão de acesso do usuário.
-
-
-                    </p>
-                    <table id="tableModalidades" class="table table-striped table-hover table-condensed">
-                      <thead>
-                        <tr>
-                          <th><a>Descrição</a></th>
-                          <th class="actions">Ações</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Aula</td>
-                          <td class="actions">
-                            <div class="btn-group col-md-12" role="group">
-                              <a class="btn btn-primary btn-xs" title="Visualizar Curso">
-                                <i data-toggle="tooltip" data-placement="top" title="Visualizar" class="fa fa-search"></i>
-                              </a>
-                              <a class="btn btn-warning btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Editar Curso" class="fa fa-pencil"></i>
-                              </a>
-                              <a class="btn btn-danger btn-xs">
-                                <i data-toggle="tooltip" data-placement="top" title="Remover Curso" class="fa fa-trash"></i>
-                              </a>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody></table>
-<!--
-</div>
-</div>
--->
-</div>
-<!--Divisória de conteúdo modal-->
-<div id="m51" class="modalAjuda collapse">
-
-
-
-
-    <p>A Adição de Tipo de Atividade encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-id-card"></i>  Tipo de Atividade&gt; <i aria-hidden="true" class="glyphicon glyphicon-plus"></i> Nova Modalidade </p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-
-                    <p>
-                      A tela de Adição de Tipo de Atividade serve para cadastrar um novo Tipo de Atividade.
-                      A princípio, o dado a ser inserido é:
-                    </p>
-                    <ul>
-                      <li>Descrição: descrição do Tipo de Atividade</li>
-
-                    </ul>
-                    <p>
-                      Após o preenchimento das informações acima, é necessário clicar no botão <button type="button" class="btn btn-success">Salvar</button>.
-                    </p>
-
-                    <p>
-                      No modo de adição, há a opção de cancelar a adição de Tipo de Atividade, é necessário clicar no botão
-                      <button type="button" class="btn btn-danger">Cancelar</button>.
-                    </p>
-<!--
-</div>
-</div>
--->
-</div>
-<!--Divisória de conteúdo modal-->
-<div id="m52" class="modalAjuda collapse">
-
-
-
-
-    <p>A Visualização de Tipo de Atividade encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-id-card"></i>  Tipo de Atividade &gt; <i aria-hidden="true" class="glyphicon glyphicon-search"></i> Visualizar</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-                    <p>
-                      A tela para Visualizar Tipo de Atividade serve para visualização dos detalhes sobre o tipo de atividade selecionada.
-                    </p>
-                    <p>
-                      A informação do tipo de atividade selecioanda a ser visualizada é:
-                    </p>
-                    <ul>
-                      <li>Descrição: descrição do tipo de atividade</li>
-                    </ul>
-                    <p>
-                      Para editar o tipo de atividade, primeiro, é necessário clicar no botão
-                      <button type="button" class="btn btn-primary "> Editar Tipo Atividade</button>.
-                      Aparecerá uma nova janela, na qual será possível a edição dos dados do tipo de atividade selecionada.
-                    </p>
-                    <p>
-                      No modo de visualização, há a opção de apagar o tipo de atividade, é necessário clicar no botão
-                      <button type="button" class="btn btn-danger">Apagar Tipo Atividade</button> e depois confirmar.
-                    </p>
-
-<!--
-</div>
-</div>
--->
-</div>
-<!--Divisória de conteúdo modal-->
-<div id="m53" class="modalAjuda collapse">
-
-
-
-    <p>A Edição de Tipo de Atividade encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-gears"></i> Configurações &gt; <i aria-hidden="true" class="glyphicon glyphicon-id-card"></i>  Tipo de Atividade &gt; <i aria-hidden="true" class="glyphicon glyphicon-pencil"></i> Editar</p>
-<!--
-                <div class="box box-success col-xs-12">
-                    <div class="box-header">
-                    -->
-
-                    <p>
-                      A tela para Editar Tipo de Atividades serve para edição dos dados do mesmo.
-                    </p>
-                    <p>
-                      A informação de Tipo de Atividades a ser editada é:
-                    </p>
-                    <ul>
-                      <li>Descrição: descrição do Tipo de Atividades</li>
-                    </ul>
-                    <p>
-                      No modo de edição, após o preenchimento das informações acima, é necessário clicar no botão
-                      <button type="button" class="btn btn-success">Salvar</button>.
-                    </p>
-                    <p>
-                      Caso deseje cancelar as modificações basta clicar no botão
-                      <button type="button" class="btn btn-danger">Cancelar</button>.
-                    </p>
-<!--
-</div>
-</div>
--->
-</div>
-
-<!--Divisória de conteúdo modal-->
-<div id="m54" class="modalAjuda collapse">
+<!
 
 
 
