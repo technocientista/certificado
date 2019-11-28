@@ -33,14 +33,14 @@
 
 
 
-  <p>A Listagem de Ações encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-briefcase"></i> Ações</p>
+  <p>A Listagem de Atividades encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-briefcase"></i> Atividades</p>
 
   <p>
-    A tela de Listagem de Ações serve para listar todas as Ações da UFMS.
+    A tela de Listagem de Atividades serve para listar todas as Atividades do IFCE.
   </p>
 
   <p>
-    Na tela de Listagem de Ações, é apresentada uma lista com as Ações da UFMS,
+    Na tela de Listagem de Atividades, é apresentada uma lista com as Atividades do IFCE,
     onde para cada um, há as opções para Visualizar
     <a class="btn btn-primary btn-xs" title="Visualizar Curso">
      <i title="Visualizar" class="fa fa-search"></i>
@@ -49,19 +49,17 @@
    <a class="btn btn-warning btn-xs">
      <i title="Editar Curso" class="fa fa-pencil"></i>
    </a>
-   e Remover <a class="btn btn-danger btn-xs"><i title="Remover Curso" class="fa fa-trash"></i></a> a ação
+   e Remover <a class="btn btn-danger btn-xs"><i title="Remover Curso" class="fa fa-trash"></i></a> a Atividades
    , dependendo da permissão de acesso do usuário.
  </p>
  <table id="tableAcao" class="table table-striped table-hover table-bordered table-condensed">
    <thead>
     <tr>
      <th><a>Título</a></th>
-     <th><a>Protocolo</a></th>
      <th><a>Dt. Final</a></th>
-     <th><a>Tipo de Ação</a></th>
      <th><a>Coordenador</a></th>
-     <th><a>Unidade de Aprovação</a></th>
-     <th class="actions actions-90">Ações</th>
+    
+     <th class="actions actions-90">Atividades</th>
    </tr>
  </thead>
  <tbody>
@@ -69,7 +67,7 @@
    <td>Workshop de Computação</td>
    <td>306029.1591.3724.04062718</td>
    <td>31/07/2017</td>
-   <td><label class="label label-default"> Ensino</label></td>
+   
    <td>Gabriel Escobar Paes</td>
    <td>FACOM</td>
 
@@ -91,7 +89,7 @@
  <td>Curso de Mestrado</td>
  <td>306029.1591.3724.04062718</td>
  <td>31/10/2017</td>
- <td><label class="label label-success"> Pesquisa</label></td>
+ 
  <td>Rogério Jesus Sandim</td>
  <td>FAODO</td>
 
@@ -115,31 +113,23 @@
 <p></p>
 
 <p>
- Além disso, há um formulário de busca, para filtrar as Ações e permitir que o
- usuário possa localizar a Ação desejada com mais facilidade.
+ Além disso, há um formulário de busca, para filtrar as Atividades e permitir que o
+ usuário possa localizar a Atividades desejada com mais facilidade.
 
  É possível fazer a filragrem através de uma das opçōes abaixo:
 
 </p><ul>
- <li>Nome da Ação: nome de indentificação da ação;</li>
- <li>Tipo de Ação: pode ser por exemplo; Ensino, Pesquisa ou Extensão;</li>
- <li>Unidade de Aprovação: unidade da administração setorial onde foi aprovado a ação</li>
- <li>Protocolo da Ação: número de identificação da ação;</li>
- <li>Coordenadores: pessoas responsáveis por coordenar uma ação;</li>
- <li>Modalidades: modalidades disponíveis para a ação;</li>
- <li>Data de Início: data na qual a ação foi iniciada;</li>
- <li>Data Final: data na qual a ação será finalizada;</li>
+ <li>Nome da Atividades: nome de indentificação da atividades;</li>
+ <li>Unidade de Aprovação: unidade da administração setorial onde foi aprovado a atividades</li>
+ <li>Coordenadores: pessoas responsáveis por coordenar uma atividades;</li>
+ <li>Data de Início: data na qual a atividades foi iniciada;</li>
+ <li>Data Final: data na qual a atividades será finalizada;</li>
  <!-- <li>Data de Aprovação: data na qual o ação foi aprovado;</li> -->
- <li>Certificados da Ação: tendo como opçōes "Ações com Certificados", "Ações sem Certificados" e "Todos";</li>
+ <li>Certificados de Atividades: tendo como opção "Atividades com Certificados";</li>
 </ul>
 Uma vez preenchido qualquer um dos campos, ou todos, o resultado da filtragem será mostrado na
 tela baseado nas informaçōes fornecidas.
 <p></p>
-<p>
- Para Adicionar uma nova ação, primeiro, é necessário clicar no botão
- <button type="button" class="btn btn-primary ">Novo</button>.
- Aparecerá uma nova janela, na qual será possível a criação da ação.
-</p>
 
 
 <!--Divisória de conteúdo modal-->
@@ -158,8 +148,6 @@ tela baseado nas informaçōes fornecidas.
                     <ul>
                       <li><b>Título: nome de indentificação da ação;</b></li>
                       <li><b>Tipo de Ação: pode ser por exemplo; Ensino, Pesquisa ou Extensão;</b></li>
-                      <li>Protocolo da Ação: número de identificação da ação;</li>
-                      <li><b>Modalidade: pode ser por exemplo; Projeto, Curso ou Prestação de Serviço;</b></li>
                       <li><b>Data de início: data na qual a ação foi iniciada;</b></li>
                       <li><b>Data final: data na qual a ação será finalizada;</b></li>
                       <li><b>Data limite para geração de certificados: data limite para geração de novos certificados na ação;</b></li>
@@ -190,42 +178,29 @@ tela baseado nas informaçōes fornecidas.
 
 
 
-                    <p>A Visualização de Ações encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-briefcase"></i> Ações &gt; <i aria-hidden="true" class="glyphicon glyphicon-search"></i> Visualizar</p>
+                    <p>A Visualização de Atividades encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-briefcase"></i> Ações &gt; <i aria-hidden="true" class="glyphicon glyphicon-search"></i> Visualizar</p>
 
 
                     <p>
-                     A tela para Visualizar Ação serve para visualização dos dados da ação.
+                     A tela para Visualizar Atividades serve para visualização dos dados da atividades.
                    </p>
                    <p>
-                     As informações da ação a serem visualizadas:
+                     As informações das Atividades a serem visualizadas:
                    </p>
                    <ul>
-                     <li>Título: nome de indentificação da ação;</li>
+                     <li>Título: nome de indentificação da atividades;</li>
                      <li>Coordenador: pessoa responsável pela ação;</li>
-                     <li>Protocolo da Ação: número de identificaçao da ação;</li>
-                     <li>Modalidade: pode ser por exemplo; Projeto, Curso ou Prestação de Serviço;</li>
-                     <li>Tipo de Ação: pode ser por exemplo; Ensino, Pesquisa ou Extensão;</li>
-                     <li>Data Inicial: data na qual a ação foi iniciada;</li>
-                     <li>Data Final: data na qual a ação será finalizada;</li>
-                     <li>Data de Aprovação: data na qual a ação foi aprovada;</li>
-                     <li>Data limite para geração dos certificados: data limite para geração de novos certificados na ação;</li>
+                     
+                     <li>Tipo de Atividades: pode ser por exemplo; Ensino, Pesquisa ou Extensão;</li>
+                     <li>Data Inicial: data na qual a atividades foi iniciada;</li>
+                     <li>Data Final: data na qual a atividades será finalizada;</li>
+                     <li>Data de Aprovação: data na qual a atividades foi aprovada;</li>
+                     <li>Data limite para geração dos certificados: data limite para geração de novos certificados na Atividades;</li>
                      <li>Unidade de Aprovação: unidade da administração setorial onde foi aprovado a ação;</li>
                    </ul>
-                   <p>
-                     Para editar a ação, primeiro, é necessário clicar no botão
-                     <button type="button" class="btn btn-warning "> Editar Ação</button>.
-                     Aparecerá uma nova janela, na qual será possível a edição dos dados do ação.
-                   </p>
-                   <p>
-                     No modo de visualização, há a opção de apagar a ação, é necessário clicar no botão
-                     <button type="button" class="btn btn-danger">Apagar Ação</button> e depois confirmar.
-                   </p>
-                   <p>
-                     Além disso, é possível acessar a área de Certificados no menu superior.
-                   </p>
 
                    <ul class="nav nav-tabs nav-tabs-acoes">
-                     <li class="active"><a href="#"><i class="fa fa-briefcase"></i>Ação</a></li>
+                     <li class="active"><a href="#"><i class="fa fa-briefcase"></i>Atividades</a></li>
                      <li class=""><a href="#"><i class="fa fa-file-o"></i>Certificados</a></li>
                    </ul>
                    <div class="box box-success">
@@ -245,7 +220,7 @@ tela baseado nas informaçōes fornecidas.
 
 
 
-                    <p>A Edição de Ações encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-briefcase"></i>  Ações &gt; <i aria-hidden="true" class="glyphicon glyphicon-pencil"></i> Editar</p>
+                    <p>A Edição de Atividades encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-briefcase"></i>  Atividades &gt; <i aria-hidden="true" class="glyphicon glyphicon-pencil"></i> Editar</p>
 <!--
                 <div class="box box-success col-xs-12">
                     <div class="box-header">
@@ -255,7 +230,7 @@ tela baseado nas informaçōes fornecidas.
                       A tela para Editar Ação serve para edição dos dados de ação.
 
                       <!-- Permissões [dúvida] -->
-                      Em relação à edição dos dados, apenas a DIAEX tem permissão para editar informações da ação.
+                      Em relação à edição dos dados, apenas o RESPONSÁVEL tem permissão para editar informações da ação.
                     </p>
                     <p>
                       As informações do curso a serem editadas são:
@@ -263,8 +238,6 @@ tela baseado nas informaçōes fornecidas.
                     <ul>
                       <li>Título: nome de indentificação da ação;</li>
                       <li>Tipo de Ação: pode ser por exemplo; Ensino, Pesquisa ou Extensão;</li>
-                      <li>Protocolo da Ação: número de identificaçao da ação;</li>
-                      <li>Modalidade: pode ser por exemplo; Projeto, Curso ou Prestação de Serviço;</li>
                       <li>Data de Início: data na qual a ação foi iniciada;</li>
                       <li>Data Final: data na qual a ação será finalizada;</li>
                       <li>Data limite para geração dos certificados: data limite para geração de novos certificados na ação;</li>
@@ -272,15 +245,6 @@ tela baseado nas informaçōes fornecidas.
                       <!-- <li>Data de Aprovação: data na qual o ação foi aprovado;</li> -->
                       <li>Unidade de Aprovação: unidade da administração setorial onde foi aprovado a ação;</li>
                     </ul>
-
-                    <p>
-                      No modo de edição, após o preenchimento das informações acima, é necessário clicar no botão
-                      <button class="btn btn-success" type="button"><i class="fa fa-floppy-o"></i>  Salvar</button>.
-                    </p>
-                    <p>
-                      No modo de edição, há a opção de apagar a ação, é necessário clicar no botão
-                      <button type="button" class="btn btn-danger">Apagar</button> e depois confirmar.
-                    </p>
                     <p>
                       Além disso, é possível acessar a área de Certificados no menu superior.
                     </p>
@@ -304,26 +268,18 @@ tela baseado nas informaçōes fornecidas.
 <div id="m6" class="modalAjuda collapse">
 
 
-    <p>A tela de Editar Certificados da Ação encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-briefcase"></i> Ações &gt; <i aria-hidden="true" class="glyphicon glyphicon-pencil"></i> Editar &gt; <i aria-hidden="true" class="glyphicon glyphicon-file"></i> Certificado </p>
+    <p>A tela de Editar Certificados da Atividade encontra-se no seguinte caminho: <i aria-hidden="true" class="glyphicon glyphicon-home"></i> Início &gt; <i aria-hidden="true" class="glyphicon glyphicon-briefcase"></i> Responsável &gt; <i aria-hidden="true" class="glyphicon glyphicon-pencil"></i> Editar &gt; <i aria-hidden="true" class="glyphicon glyphicon-file"></i> Certificado </p>
 <!--
                 <div class="box box-success col-xs-12">
                     <div class="box-header">
                     -->
 
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <video controls="controls"><source src="/files/../videos/ajuda/ajuda_acoes_certificados_por_acao.mp4" type="video/mp4"></video></div>
                         <br><br>
 
 
                         <p>
-                          A tela de Editar Certificados da Ação serve para editar, adicionar e também para listar
-                          os Certificados relacionadas à alguma ação.
-                        </p>
-                        <p>
-                          É possível adicionar um certificado à alguma ação usando o botão
-                          <a class="btn btn-primary"> <i class="fa fa-plus-square"></i> Certificado</a>.<br>
-                          <strong>OBS:É necessário que Tipo Certificado esteja vinculado ao Tipo de Ação.</strong>
-
+                          A tela de Editar Certificados de Atividades serve para editar, adicionar e também para listar
+                          os Certificados relacionadas à alguma atividade.
                         </p>
 
                         <p>Existe uma lista com todos os certificados relacionados à ação selecionada, para cada
