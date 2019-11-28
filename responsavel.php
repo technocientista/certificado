@@ -86,43 +86,112 @@ include 'funcoes/verifica_login.php';
 
 								}
 								?>
+								<form method="post" action="funcoes/check_aprova_reprova.php">
+									<ul class="nav nav-tabs ">
+										<li class="nav-item" id="todos">
+											<a class="nav-link active " href="#">Todos <span class="badge badge-pill badge-success"><?php echo $todos; ?></span></a>
+										</li>
+										<li class="nav-item " id="aprovados">
+											<a class="nav-link" href="#">Aprovados <span class="badge badge-pill badge-success"><?php echo $aprovados; ?></span></a>
+										</li>
+										<li class="nav-item" id="reprovados">
+											<a class="nav-link" href="#">Reprovados <span class="badge badge-pill badge-success"><?php echo $reprovados; ?></span></a>
+										</li>
+										<li class="nav-item" id="emitidos">
+											<a class="nav-link" href="#">Emitidos/Assinados <span class="badge badge-pill badge-success"><?php echo $emitidos; ?></span></a>
+										</li>
+										<li class="nav-item" id="correcao">
+											<a class="nav-link" href="#">Correção <span class="badge badge-pill badge-success"><?php echo $correcao; ?></span></a>
+										</li>
+										<li class="nav-item" id="cancelados">
+											<a class="nav-link " href="#" >Cancelados <span class="badge badge-pill badge-success"><?php echo $cancelados; ?></span></a>
+										</li>
+										
+									</ul>
 
-								<ul class="nav nav-tabs ">
-									<li class="nav-item" id="todos">
-										<a class="nav-link active " href="#">Todos <span class="badge badge-pill badge-success"><?php echo $todos; ?></span></a>
-									</li>
-									<li class="nav-item " id="aprovados">
-										<a class="nav-link" href="#">Aprovados <span class="badge badge-pill badge-success"><?php echo $aprovados; ?></span></a>
-									</li>
-									<li class="nav-item" id="reprovados">
-										<a class="nav-link" href="#">Reprovados <span class="badge badge-pill badge-success"><?php echo $reprovados; ?></span></a>
-									</li>
-									<li class="nav-item" id="emitidos">
-										<a class="nav-link" href="#">Emitidos/Assinados <span class="badge badge-pill badge-success"><?php echo $emitidos; ?></span></a>
-									</li>
-									<li class="nav-item" id="correcao">
-										<a class="nav-link" href="#">Correção <span class="badge badge-pill badge-success"><?php echo $correcao; ?></span></a>
-									</li>
-									<li class="nav-item" id="cancelados">
-										<a class="nav-link " href="#" >Cancelados <span class="badge badge-pill badge-success"><?php echo $cancelados; ?></span></a>
-									</li>
-								</ul>
 
-								<table id="tableAcao" class="table table-bordered table-condensed ">
-									<thead class="text-light bg-success">
-										<tr class="text-center">
-											<th ><a>#</a></th>
-											<th class="tr-max"><a>Nome</a></th>
-											<th class="tr-max"><a>Curso</a></th>
-											<th class=""><a>Situação</a></th>
-											<th class="actions actions-90">Ações</th>
-										</tr>
-									</thead>
-									<tbody>
-										<?php include 'import/tabela_responsavel.php'; ?>
+									<div class="modal fade" id="aprova" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header bg-danger">
+													<h5 class="modal-title text-white" >Aprovar alunos</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body" >
+													Tem certeza que deseja aprovar estes alunos?
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-success" data-dismiss="modal">Não
+													</button>
+													<button type="submit" class="btn btn-danger" name="reprova">Sim</button>
 
-									</tbody>
-								</table>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="modal fade" id="reprova" tabindex="-1" role="dialog" aria-labelledby="title" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header bg-danger">
+													<h5 class="modal-title text-white" >Reprovar alunos</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body" id="modal-body">
+													Tem certeza que deseja reprovar estes alunos?
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>
+													<button type="submit" class="btn btn-success" name="aprova">Sim</button>
+
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+
+
+
+
+									<table id="tableAcao" class="table table-bordered table-condensed ">
+										<thead class="text-light bg-success">
+											<tr class="text-center">
+												<th ><a>#</a></th>
+												<th class="tr-max"><a>Nome</a></th>
+												<th class="tr-max"><a>Curso</a></th>
+												<th class=""><a>Situação</a></th>
+												<th class="actions actions-90">
+													<div class="btn-group text-right" role="group">
+														<div class="container-fluid ">
+															<input type="checkbox"  name="" value="" id="checkAll">
+														</div>
+														<a href="#" class="text-light " data-toggle="modal" data-target="#reprova" title="Reprovar aluno" data-confirm="Tem certeza que deseja reprovar estes aluno?">
+															<i class="material-icons sm-18">
+																cancel
+															</i>
+														</a>
+														<a href="#" class="text-light container-fluid" data-toggle="modal" data-target="#aprova" title="Aprovar aluno" data-confirm="Tem certeza que deseja aprovar estes aluno?">
+															<i class="material-icons sm-18">
+																check
+															</i>
+														</a>
+													</div>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<?php include 'import/tabela_responsavel.php'; ?>
+
+										</tbody>
+									</table>
+								</form>
+
 
 							</div>
 
@@ -141,5 +210,21 @@ include 'funcoes/verifica_login.php';
 		<script src="js/altera_cor_situacao.js"></script>
 		<script src="js/dados.js"></script>
 		<script src="js/filtra.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#checkAll').on('click', function(){
+					
+					
+					if (!$('.checkAll').attr('checked')) {
+						$('.checkAll').attr('checked', 'checked');
+					}else{
+						$('.checkAll').attr('checked', null);
+					}
+					
+				});
+
+			});
+		</script>
+
 	</body>
 	</html>

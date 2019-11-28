@@ -1,6 +1,10 @@
 <?php 
+
 session_start();
 include 'conn.php';
+$aprovados = 0;
+$erros = 0;
+
 $id = $_GET['id'];
 
 $sql = "SELECT * FROM participa";
@@ -14,15 +18,15 @@ if ($resultado->num_rows > 0) {
 			$status_participa = $linha['status_participa'];
 			$situacao_participa = $linha['fk_situacao_ativ_id_situacao_ativ'];
 		}
-		
-		
+
+
 	}
 }
 
 if ($status_participa && $situacao_participa != 3) {
 	# code...
-	$sql2 = "UPDATE participa SET fk_situacao_ativ_id_situacao_ativ = 3 WHERE id_participa='$id'";
-	$resultado_usuario = mysqli_query($conn, $sql2);
+	$sql = "UPDATE participa SET fk_situacao_ativ_id_situacao_ativ = 3 WHERE id_participa='$id'";
+	$resultado_usuario = mysqli_query($conn, $sql);
 	if(mysqli_affected_rows($conn)){
 		$_SESSION['msg'] = "O aluno foi aprovado!";
 		$_SESSION['check'] = 1;
