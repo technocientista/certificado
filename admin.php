@@ -54,7 +54,9 @@ include 'funcoes/verifica_login.php';
 
 									</tbody>
 								</table>
-
+								<div class=" ">
+									<a class="btn btn-success my-2 my-sm-0" href="registrar_usuario.php">Novo usuário</a>
+								</div>
 							</div>
 
 

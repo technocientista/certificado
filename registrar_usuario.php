@@ -30,7 +30,7 @@ header('Content-Type: text/html; charset=utf-8');
 								<h3 class="box-title">Registro de usuário</h3>
 							</div>
 							<div class="box-body">
-								<form action="funcoes/regist_user_admin.php" method="POST">
+								<form action="funcoes/regist_user_admin.php" method="POST" class="was-validated">
 									<div class="form-row">
 										<div class="col-md-4 mb-3">
 											<label for="validationServer01">Nome completo</label>

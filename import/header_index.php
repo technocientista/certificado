@@ -87,7 +87,7 @@
 							<div class="collapse navbar-collapse" id="navbarNav">
 								<ul class="navbar-nav">
 									<li class="nav-item ">
-										<a class="nav-link" href="administrador.php">Área do administrador</a>
+										<a class="nav-link" href="admin.php">Área do administrador</a>
 
 									</li>
 
