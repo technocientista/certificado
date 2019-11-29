@@ -168,15 +168,15 @@ include 'funcoes/verifica_login.php';
 												<th class=""><a>Situação</a></th>
 												<th class="actions actions-90">
 													<div class="btn-group text-right" role="group">
-														<div class="container-fluid ">
-															<input type="checkbox"  name="" value="" id="checkAll">
+														<div class="bg-light container-fluid ">
+															<input class="" type="checkbox"  name="" value="" id="checkAll">
 														</div>
-														<a href="#" class="text-light " data-toggle="modal" data-target="#reprova" title="Reprovar aluno" data-confirm="Tem certeza que deseja reprovar estes aluno?">
+														<a href="#" class="bg-light text-danger " data-toggle="modal" data-target="#reprova" title="Reprovar aluno" data-confirm="Tem certeza que deseja reprovar estes aluno?">
 															<i class="material-icons sm-18">
 																cancel
 															</i>
 														</a>
-														<a href="#" class="text-light container-fluid" data-toggle="modal" data-target="#aprova" title="Aprovar aluno" data-confirm="Tem certeza que deseja aprovar estes aluno?">
+														<a href="#" class="bg-light text-success container-fluid" data-toggle="modal" data-target="#aprova" title="Aprovar aluno" data-confirm="Tem certeza que deseja aprovar estes aluno?">
 															<i class="material-icons sm-18">
 																check
 															</i>
@@ -210,22 +210,7 @@ include 'funcoes/verifica_login.php';
 		<script src="js/altera_cor_situacao.js"></script>
 		<script src="js/dados.js"></script>
 		<script src="js/filtra.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$('#checkAll').on('click', function(){
-					
-					
-					if (!$('.checkAll').attr('checked')) {
-						$('.checkAll').attr('checked', 'checked');
-					}else{
-						$('.checkAll').attr('checked', null);
-					}
-					
-				});
-				
-
-			});
-		</script>
+		<script src="js/check.js"></script>
 
 	</body>
 	</html>
