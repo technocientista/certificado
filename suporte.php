@@ -15,51 +15,43 @@
 					<div class="col-lg-12">
 						<div class="jumbotron box box-success">
 							<!-- Body alterável: -->
+							<?php include 'funcoes/alert.php'; ?>
 							<div class="box-header">
 								<h3 class="box-title">Contato com o suporte</h3>
 							</div>
 
-							<form>
+							<form method="post" action="funcoes/contato_suporte.php" class="was-validated" accept-charset="utf-8" role="form">
 								<div class="form-row">
 									<div class="col-md-4 mb-3">
 										<label for="validationServer01">Nome completo</label>
-										<input type="text" class="form-control is-invalid" id="validationServer01" placeholder="Digite seu nome" value="" required>
-										<div class="invalid-feedback">
-											Por favor digite seu nome.
-										</div>
+										<input type="text" class="form-control is-invalid" id="validationServer01" placeholder="Digite seu nome" value="" required name="nome">
+										
 									</div>
 									<div class="col-md-4 mb-3">
 										<label for="validationServerUsername">E-mail</label>
-										<input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="E-mail" aria-describedby="inputGroupPrepend3" required>
-										<div class="invalid-feedback">
-											Por favor digite seu e-mail.
-										</div>
+										<input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="E-mail" aria-describedby="inputGroupPrepend3" required name="email">
+										
 									</div>
 									<div class="col-md-4 mb-3">
 										<label for="validationServer02">Telefone</label>
-										<input type="number" class="form-control is-invalid" id="validationServer02" placeholder="Digite seu telefone" value="" required>
-										<div class="invalid-feedback">
-											Por favor digite seu telefone.
-										</div>
+										<input type="number" class="form-control is-invalid" id="validationServer02" placeholder="Digite seu telefone" value="" required name="telefone">
+										
 									</div>
 								</div>
 								<div class="form-row">
 									<div class="col-md-4 mb-3">
 										<label for="validationServer01">Assunto</label>
-										<input type="text" class="form-control is-invalid" id="validationServer01" placeholder="Digite seu nome" value="" required>
-										<div class="invalid-feedback">
-											Por favor digite o assunto.
-										</div>
+										<input type="text" class="form-control is-invalid" id="validationServer01" placeholder="Digite seu nome" value="" required name="assunto">
+										
 									</div>
 									<div class="col-md-8 mb-3">
 										<label for="validationServer01">Mensagem</label>
-										<textarea class="form-control is-invalid" id="validationServer01" rows="3"></textarea>
-										<div class="invalid-feedback">
-											Por favor digite a mensagem.
-										</div>
+										<textarea class="form-control is-invalid" id="validationServer01" rows="3" name="mensagem" required></textarea>
+										
 									</div>
 								</div>
-								<a class="btn btn-success" href="index.php" >Enviar</a>
+								<button class="btn btn-success" type="submit">Enviar</button>
+								
 							</form>
 							<!-- Body alterável: -->
 							

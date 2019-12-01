@@ -14,7 +14,7 @@ include 'funcoes/verifica_login.php';
 </head>
 <body>
 	<?php 
-	include 'import/header.php'; 
+	include 'import/header_admin.php'; 
 	include 'import/modal.php'; 
 	?>
 
@@ -34,7 +34,7 @@ include 'funcoes/verifica_login.php';
 								<p>Veja aqui a sua lista de usuários e suas situações.</p>
 								
 								<?php include 'import/filtrar.php'; ?>
-
+								<a class="btn btn-success my-2 my-sm-0" href="registrar_usuario.php">Novo usuário</a>
 							</div>
 							<div class="table-responsive-lg">
 
@@ -54,9 +54,7 @@ include 'funcoes/verifica_login.php';
 
 									</tbody>
 								</table>
-								<div class=" ">
-									<a class="btn btn-success my-2 my-sm-0" href="registrar_usuario.php">Novo usuário</a>
-								</div>
+								
 							</div>
 
 
@@ -74,6 +72,9 @@ include 'funcoes/verifica_login.php';
 		<script src="js/altera_cor_situacao.js"></script>
 		<script src="js/dados.js"></script>
 		<script src="js/filtra.js"></script>
+		<script type="text/javascript">
+			$('#admin').addClass('active');
+		</script>
 	</body>
 	</html>
 	<?php 
