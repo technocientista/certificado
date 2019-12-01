@@ -14,9 +14,11 @@
 
 <td class="actions text-light text-center">
 	<div class="btn-group" role="group">
+		<div class="container-fluid ">
+			<input class="checkAll" type="checkbox"  name="check[]" value="<?php echo $id_participa;?>" >
+		</div>
 
-
-		<a href="funcoes/apagar_participa.php?id=<?php echo $id_participa;?>" class="btn btn-danger btn-sm abrir_modal" data-toggle="modal" data-target="#modal" title="Excluir atividade" data-confirm="Tem certeza que deseja excluir essa atividade?">
+		<!--<a href="funcoes/apagar_participa.php?id=<?php echo $id_participa;?>" class="btn btn-danger btn-sm abrir_modal" data-toggle="modal" data-target="#modal" title="Excluir atividade" data-confirm="Tem certeza que deseja excluir essa atividade?">
 			<i class="material-icons sm-18">
 				delete
 			</i>
@@ -25,7 +27,7 @@
 			<i class="material-icons sm-18">
 				print
 			</i>
-		</a>
+		</a>-->
 	</div>
 </td>
 

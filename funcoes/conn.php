@@ -1,8 +1,8 @@
 <?php
 $servidor="localhost";
 $usuario="root";
-//$senha="root";
-$senha="";
+$senha="root";
+//$senha="";
 $baseDeDados="certificado";
 
 $conn = new mysqli($servidor,$usuario,$senha,$baseDeDados);

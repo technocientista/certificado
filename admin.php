@@ -76,3 +76,6 @@ include 'funcoes/verifica_login.php';
 		<script src="js/filtra.js"></script>
 	</body>
 	</html>
+	<?php 
+	mysqli_close($conn);
+	?>

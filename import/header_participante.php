@@ -26,11 +26,15 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item ">
-                            <a class="nav-link" href="participante.php">Minhas atividades</a>
+                            <a id="participante" class="nav-link" href="participante.php">Minhas atividades</a>
 
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="novas_atividades.php">Novas atividades</a>
+                            <a id="novas_atividades" class="nav-link" href="novas_atividades.php">Novas atividades</a>
+
+                        </li>
+                        <li class="nav-item ">
+                            <a id="meus_certificados" class="nav-link" href="meus_certificados.php">Meus certificados</a>
 
                         </li>
                     </ul>

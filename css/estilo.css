@@ -1,5 +1,7 @@
 html{
-    height: 100%;
+    position: absolute;
+    width: 100%;
+    height: auto;
 }
 
 body{
@@ -77,8 +79,8 @@ a.nav-link:link
     padding-top: 10px;
     margin: 0;
     float: left;
-    position:absolute;
-    bottom: auto;
+    position:fixed;
+    bottom: 0;
     display: block;
 }
 
@@ -237,3 +239,4 @@ div.modal-dialog.ajuda{
 .invisivel{
     display: none;
 }
+

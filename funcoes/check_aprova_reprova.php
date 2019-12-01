@@ -17,7 +17,7 @@ if (!$arr) {
 
 
 switch (get_post_action('aprova', 'reprova')) {
-    case 'reprova':
+    case 'aprova':
 
 
     foreach($arr as $check){
@@ -73,7 +73,7 @@ switch (get_post_action('aprova', 'reprova')) {
 
     break;
 
-    case 'aprova':
+    case 'reprova':
 
 
 

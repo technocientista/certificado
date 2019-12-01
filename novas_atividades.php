@@ -54,9 +54,17 @@ header('Content-Type: text/html; charset=utf-8');
 
 	<?php include 'import/footer.php'; ?>
 	<?php include 'import/import_script.php'; ?>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#novas_atividades').addClass('active');
+		});
 
+	</script>
 
 
 	
 </body>
 </html>
+<?php 
+mysqli_close($conn);
+?>

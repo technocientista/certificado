@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	$('.reprovados, .emitidos, .correcao, .assinados, .cancelados, .todos').hide();
+	
 	$('#ativas a').click(function (e) {
 		e.preventDefault();
 		$(this).tab('show');
@@ -16,8 +18,8 @@ $(document).ready(function(){
 	$('#todos').click(function (e) {
 		
 		$(this).tab('show');
-		$('.todos, .aprovados, .reprovados, .assinados, .emitidos, .correcao, .cancelados, .todos').show();
-		$('.todos, .aprovados, .reprovados, .assinados, .emitidos, .correcao, .cancelados, .todos').find('input').addClass('checkAll');
+		$('.todos, .aprovados, .reprovados, .assinados, .emitidos, .correcao, .cancelados').show();
+		$('.todos, .aprovados, .reprovados, .assinados, .emitidos, .correcao, .cancelados').find('input').addClass('checkAll');
 
 	})
 	$('#aprovados').click(function (e) {

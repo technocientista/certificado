@@ -13,7 +13,11 @@
 
 <td class="actions text-light text-center">
 	<div class="btn-group" role="group">
-		<a href="funcoes/enviar_correcao.php?id=<?php echo $id_participa;?>" class="btn btn-warning btn-sm abrir_modal" data-toggle="modal" data-target="#modal" title="Enviar para correção" data-confirm="Tem certeza que deseja enviar essa aprovação para correção?">
+		<div class="container-fluid ">
+			<input class="checkAll" type="checkbox"  name="check[]" value="<?php echo $id_participa;?>" >
+		</div>
+
+		<!--<a href="funcoes/enviar_correcao.php?id=<?php echo $id_participa;?>" class="btn btn-warning btn-sm abrir_modal" data-toggle="modal" data-target="#modal" title="Enviar para correção" data-confirm="Tem certeza que deseja enviar essa aprovação para correção?">
 			<i class="material-icons sm-18">
 				cached
 			</i>
@@ -27,7 +31,7 @@
 			<i class="material-icons sm-18">
 				check
 			</i>
-		</a>
+		</a>-->
 	</div>
 </td>
 <div class="collapse" id="mais-<?php echo $id_participa; ?>">

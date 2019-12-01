@@ -44,12 +44,12 @@ include ('funcoes/verifica_login.php');
 										<a class="apagadas_link nav-link" href="#">Paradas</a>
 									</li>
 									<div class="col text-right">
-										<a class="btn btn-outline-success my-2 my-sm-0" href="registrar_atividade.php">Nova atividade</a>
+										<a class="btn btn-success my-2 my-sm-0" href="registrar_atividade.php">Nova atividade</a>
 									</div>
 									
 								</ul>
 								<table id="tableAcao" class="table table-hover table-bordered table-condensed ">
-									<thead class="text-light bg-success">
+									<thead class="bg-light">
 										<tr class="text-center">
 											<th class="tr-max"><a>#</a></th>
 											<th ><a>Atividade</a></th>
@@ -77,6 +77,11 @@ include ('funcoes/verifica_login.php');
 		<?php include 'import/footer.php'; ?>
 		<?php include 'import/import_script.php'; ?>
 		<script src="js/filtra.js"></script>
-		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#atividades').addClass('active');
+			});
+
+		</script>
 	</body>
 	</html>

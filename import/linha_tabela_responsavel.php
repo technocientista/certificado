@@ -17,16 +17,7 @@
 		<div class="container-fluid ">
 			<input class="checkAll" type="checkbox"  name="check[]" value="<?php echo $id_participa;?>" >
 		</div>
-		<a href="funcoes/reprovar.php?id=<?php echo $id_participa;?>" class="text-danger abrir_modal" data-toggle="modal" data-target="#modal" title="Reprovar aluno" data-confirm="Tem certeza que deseja reprovar este aluno?">
-			<i class="material-icons sm-18">
-				cancel
-			</i>
-		</a>
-		<a href="funcoes/aprovar.php?id=<?php echo $id_participa;?>" class="text-success abrir_modal container-fluid " data-toggle="modal" data-target="#modal" title="Aprovar aluno" data-confirm="Tem certeza que deseja aprovar este aluno?">
-			<i class="material-icons sm-18">
-				check
-			</i>
-		</a>
+		
 	</div>
 
 
@@ -38,7 +29,7 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header bg-danger">
-				<h5 class="modal-title text-white" id="title"></h5>
+				<h5 class="modal-title text-white title"></h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>

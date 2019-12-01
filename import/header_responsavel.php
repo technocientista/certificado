@@ -19,11 +19,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
-                        <a class="nav-link" href="responsavel.php">Situação de participantes</a>
+                        <a id="responsavel" class="nav-link" href="responsavel.php">Situação de participantes</a>
 
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="atividades.php">Atividades</a>
+                        <a id="atividades" class="nav-link" href="atividades.php">Atividades</a>
 
                     </li>
                 </ul>
