@@ -5,7 +5,7 @@
  </p><ul>
    <li>
      <strong>Participante</strong> >de Ação/Projeto que quer realizar download de seu certificado: Não precisa de acesso ao sistema.
-     Para realizar a emissão de seus certificados na área pública, clique <a href="/emitir-certificados/index" alt="AQUI" title="AQUI">AQUI</a;
+     Para realizar a emissão de seus certificados na área pública, clique <a href="/emitir-certificados/index" alt="AQUI" title="AQUI">AQUI</a>
    </li>
    <li>
      <strong>Diretor</strong>  Solicitar que a pró-reitoria responsável pela Ação cadastre-a no sistema e vincule-o como respósavel.
