@@ -1,4 +1,4 @@
-<!--Divisória de conteúdo modal-->
+<!--Divisória de conteúdo modal Dell-->
 <div id="m1" class="modalAjuda collapse">
 
  <p>Formas de obter acesso ao sistema:
