@@ -1,4 +1,4 @@
-<!--Divisória de conteúdo modal Brenda-->
+<!--Divisória de conteúdo modal-->
 <div id="m1" class="modalAjuda collapse">
 
  <p>Formas de obter acesso ao sistema:
