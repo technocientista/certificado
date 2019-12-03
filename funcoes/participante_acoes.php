@@ -94,18 +94,14 @@ switch (get_post_action('apagar', 'emitir')) {
         if ($resultado->num_rows > 0) {
             while($linha = $resultado->fetch_assoc()) {
                 if ($id == $linha["id_participa"]) {
-            # code...
-                    
+
+
                     $login                  = $linha["login"];
                     $tel_usuario            = $linha["tel_usuario"];
 
-
-
-
-
                     $id_participa           = $linha["id_participa"];
-                    $status_participa = $linha['status_participa'];
-                    $situacao_participa = $linha['id_situacao_ativ'];
+                    $status_participa       = $linha['status_participa'];
+                    $situacao_participa     = $linha['id_situacao_ativ'];
                 }
 
 
@@ -131,6 +127,7 @@ switch (get_post_action('apagar', 'emitir')) {
                 $resultado_usuario = mysqli_query($conn, $sql);
                 if(mysqli_affected_rows($conn)){
 
+                    $emitidos = $emitidos + 1;
 
                 }else{
 
@@ -140,8 +137,6 @@ switch (get_post_action('apagar', 'emitir')) {
                     exit();
                 } 
 
-
-                $emitidos = $emitidos + 1;
 
             }else{
 

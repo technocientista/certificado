@@ -105,6 +105,3 @@ include 'funcoes/verifica_login.php';
 
 	</body>
 	</html>
-	<?php 
-	mysqli_close($conn);
-	?>

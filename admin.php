@@ -77,6 +77,3 @@ include 'funcoes/verifica_login.php';
 		</script>
 	</body>
 	</html>
-	<?php 
-	mysqli_close($conn);
-	?>

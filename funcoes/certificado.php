@@ -136,7 +136,7 @@ span.heading_numbering
 <p class="P1">&nbsp;</p>
 <p class="P11">CERTIFICADO</p>
 <p class="P3">&nbsp;</p>
-<p class="P10">Certificamos que <strong><?php echo $nome_usuario;  ?></strong> concluiu <strong><?php echo $nome_atv;  ?></strong>, ofertado pelo Instituto Federal de Educação, Ciência e Tecnologia do Ceará, IFCE – Acopiara, em <strong><?php echo date('d-m-Y', $data_final_atv);  ?></strong>, com carga horária total de <strong><?php echo $carga_horaria_atv;  ?></strong>.</p>
+<p class="P10">Certificamos que <strong><?php echo $nome_usuario;  ?></strong> concluiu <strong><?php echo $nome_atv;  ?></strong>, ofertado pelo Instituto Federal de Educação, Ciência e Tecnologia do Ceará, IFCE – Acopiara, em <strong><?php echo $data_final_atv;  ?></strong>, com carga horária total de <strong><?php echo $carga_horaria_atv;  ?></strong>.</p>
 <p class="P4">&nbsp;</p>
 <p class="P5">
 	<span>&nbsp;</span>

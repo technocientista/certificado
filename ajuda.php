@@ -26,34 +26,34 @@
 							<div class="list-group">
 								<a id="1" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">1.1. Acesso ao Sistema</a>
 							</div>
-							<h3>2. Ações</h3>
+							<h3>2. Atividades</h3>
 							<div class="list-group">
-								<a id="2" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.1. Listar Ações</a>
-								<a id="3" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.2. Adicionar Ações</a>
-								<a id="4" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.3. Visualizar Ações</a>
-								<a id="5" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.4. ar Ações</a>
-								<a id="6" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.5. ar Certificados da Ação</a>
-								<a id="7" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.6. Adiciona pessoa à Ação</a>
-								<a id="8" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.7. Adicionar pessoas em massa à Ação</a>
-								<a id="9" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.8. Itens do Certificado</a>
-								<a id="10" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.9. Visualização de Item do Certificado</a>
-								<a id="11" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.10. Enviar Itens para Aprovação</a>
-								<a id="12" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.11. Permissões / Operadores</a>
-								<a id="13" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.12. Novo Operador</a>
+								<a id="2" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.1. Listar Atividades</a>
+								<a id="3" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.2. Adicionar Atividades</a>
+								<a id="4" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">2.3. Visualizar Atividades</a>
+								<a id="5" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="6" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="7" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="8" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="9" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="10" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="11" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="12" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="13" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
 							</div>
-							<h3>3. Pessoas</h3>
+							<h3>3. Participantes</h3>
 							<div class="list-group">
-								<a id="14" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">3.1. Listar Pessoas</a>
-								<a id="15" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">3.2. Adicionar Pessoas</a>
-								<a id="16" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">3.3. Visualizar Pessoas</a>
-								<a id="17" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">3.4. ar Pessoas</a>
+								<a id="14" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">3.1. Listar Participantes</a>
+								<a id="15" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">3.2. Adicionar Participantes</a>
+								<a id="16" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">3.3. Página de Participantes</a>
+								<a id="17" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
 							</div>
-							<h3>4. Função</h3>
+							<h3>4. Responsável</h3>
 							<div class="list-group">
-								<a id="18" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">4.1. Listar Funções</a>
-								<a id="19" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">4.2. Adicionar Funções</a>
-								<a id="20" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">4.3. Visualizar Funções</a>
-								<a id="21" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">4.4. ar Funções</a>
+								<a id="18" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">4.1. </a>
+								<a id="19" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="20" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="21" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
 							</div>
 							<h3>5. Certificados</h3>
 							<div class="list-group">
@@ -70,43 +70,43 @@
 							</div>
 							<h3>6. Modalidades</h3>
 							<div class="list-group">
-								<a id="32" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">6.1. Listar Modalidades</a>
-								<a id="33" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">6.2. Adicionar Modalidades</a>
-								<a id="34" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">6.3. Visualizar Modalidades</a>
-								<a id="35" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">6.4. ar Modalidades</a>
+								<a id="32" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="33" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="34" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="35" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
 							</div>
 							<h3>7. Modelo Textual</h3>
 							<div class="list-group">
-								<a id="36" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">7.1. Listar Modelo Textual</a>
-								<a id="37" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">7.2. Adicionar Modelo Textual</a>
-								<a id="38" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">7.3. Visualizar Modelo Textual</a>
-								<a id="39" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">7.4. ar Modelo Textual</a>
+								<a id="36" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="37" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="38" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="39" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
 							</div>
 							<h3>8. Modelo Gráfico</h3>
 							<div class="list-group">
-								<a id="40" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">8.1. Listar Modelo Gráfico</a>
-								<a id="41" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">8.2. Adicionar Modelo Gráfico</a>
-								<a id="42" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">8.3. Visualizar Modelo Gráfico</a>
-								<a id="43" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">8.4. ar Modelo Gráfico</a>
+								<a id="40" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="41" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="42" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="43" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
 							</div>
 							<h3>9. Tipo Pessoa</h3>
 							<div class="list-group">
-								<a id="44" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">9.1. Listar Tipo Pessoa</a>
-								<a id="45" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">9.2. Adicionar Tipo Pessoa</a>
-								<a id="46" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">9.3. ar Tipo Pessoa</a>
+								<a id="44" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="45" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="46" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
 							</div>
-							<h3>10. Tipo de Ação</h3>
+							<h3>10. Tipo de Atividade</h3>
 							<div class="list-group">
-								<a id="47" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">10.1. Listar Tipo Ação</a>
-								<a id="48" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">10.2. Adicionar Tipo Ação</a>
-								<a id="49" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">10.3. ar Tipo Ação</a>
+								<a id="47" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="48" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="49" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
 							</div>
 							<h3>11. Tipo de Atividade</h3>
 							<div class="list-group">
-								<a id="50" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">11.1. Listar Tipo Atividade</a>
-								<a id="51" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">11.2. Adicionar Tipo Atividade</a>
-								<a id="52" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">11.3. Visualizar Tipo Atividade</a>
-								<a id="53" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">11.4. ar Tipo Atividade</a>
+								<a id="50" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="51" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="52" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
+								<a id="53" href="#" class="list-group-item itemAjuda abrir_modal" title="" data-confirm="" data-toggle="modal" data-target="#modal">...</a>
 							</div>
 							<h3>12. Impressão Certificado</h3>
 							<div class="list-group">
