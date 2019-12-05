@@ -96,5 +96,6 @@ $dompdf->render();
 
 // Enviando o PDF para o browser
 
-$dompdf->stream();
+//$dompdf->stream();
+$dompdf->stream('certificado.pdf', array("Attachment" => 0));
 
