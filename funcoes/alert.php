@@ -1,5 +1,5 @@
 <?php
-include 'funcoes/verifica_session_start.php';
+
 if (isset($_SESSION['check'])){
 
 	?>

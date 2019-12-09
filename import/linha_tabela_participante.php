@@ -6,7 +6,7 @@
 		</i>
 	</a>
 </th>
-<td ><?php echo $nome_atv; ?></td>
+<td class="td01"><?php echo $nome_atv; ?></td>
 <td class="tr-max text-center"><?php echo $carga_horaria_atv; ?></td>
 <td class=" text-center"><label class="badge badge-pill text-wrap"><?php echo $situacao_ativ;?></label></td>
 

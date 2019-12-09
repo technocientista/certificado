@@ -120,11 +120,13 @@ span.heading_numbering
 	{font-size:12pt}
 -->
 </style>
+
+
 </head>
 <body dir="ltr" background="img/fundo.jpg" style="max-width:100%; margin-top:0.64cm; margin-bottom:0.64cm; margin-left:0.64cm; margin-right:0.64cm; background-repeat:no-repeat; background-size:1200px; text-align: center">
 
 <p class="P1">&nbsp;</p>
-<p class="P1">&nbsp;</p>
+
 <img src="img/ifce.png" width="40%" >
 <p class="P2">&nbsp;</p>
 <p class="P2">&nbsp;</p>
@@ -149,11 +151,21 @@ span.heading_numbering
 	</span></p>
 <p class="P7">&nbsp;</p>
 <p class="P7">&nbsp;</p>
-<p class="P5"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;____________________________</span></p>
+<p class="P5"><span>&nbsp;____________________________</span></p>
 <p class="P6"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></p>
 <p class="P6"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;<span class="T4">Diretor-Geral</span></span></p>
-<br><br><br>
+<br>
 <label>Chave de verificação</label>
-<label><?php echo $id_certificado; ?></label>
+<label id='codigo'><?php echo $id_certificado; ?></label>
+
+<?php 
+ob_start();
+require_once 'qr.php';
+
+echo ob_get_clean();
+?>
+
+
+
 </body>
 </html>

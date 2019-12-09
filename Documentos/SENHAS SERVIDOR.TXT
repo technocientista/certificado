@@ -1,0 +1,10 @@
+https://files.000webhost.com/
+
+LOGIN: certifice
+SENHA: certifice1234
+
+
+https://databases.000webhost.com/
+
+LOGIN: id11886985_quarteto
+SENHA: quarteto

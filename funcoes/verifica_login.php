@@ -1,5 +1,5 @@
 <?php
-include 'funcoes/verifica_session_start.php';
+session_start();
 if (!$_SESSION['usuario']) {
 	# code...
 	header('Location:index.php');
